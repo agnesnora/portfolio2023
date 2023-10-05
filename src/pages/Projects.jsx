@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 export default function Projects() {
   const [projects, setProjects] = useState([]);
 
@@ -10,17 +10,17 @@ export default function Projects() {
   }, []);
 
   const projectElements = projects.map((project) => (
-    <div key={project.id} className="project-tile">
-      <img src={project.imageUrl} />
-      <div className="project-info">
-        <h3>{project.name}</h3>
-        <p>
-          ${project.price}
-          <span>/day</span>
-        </p>
+    <Link key={project.id} to={`/projects/${project.id}`}>
+      <div key={project.id} className="project-tile">
+        <img src={project.imageUrl} />
+        <div className="project-info">
+          <h3>{project.name}</h3>
+        </div>
+        <i className={`project-type ${project.type} selected`}>
+          {project.type}
+        </i>
       </div>
-      <i className={`project-type ${project.type} selected`}>{project.type}</i>
-    </div>
+    </Link>
   ));
   return (
     <div className="project--list--container">
