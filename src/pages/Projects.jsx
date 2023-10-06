@@ -77,7 +77,24 @@ export default function Projects() {
         <div className="project--info">
           <div className="project--text">
             {" "}
-            {project.id == hoveredProject.id ? <h5>{project.name}</h5> : null}
+            {/* {project.id == hoveredProject.id ? <h5>{project.name}</h5> : null} */}
+            {project.id == hoveredProject.id ? (
+              <div>
+                <ul>
+                  {project.type.map((type) => (
+                    <li key={type}>{type}</li>
+                  ))}
+                </ul>
+                <h5>{project.name}</h5>
+              </div>
+            ) : null}
+            {/* {project.id == hoveredProject.id
+              ? project.type.map((type) => {
+                  ;
+
+                  console.log(type);
+                }) */}
+            {/* : null} */}
           </div>
         </div>
       </div>
