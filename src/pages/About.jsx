@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-
+import Resume from "../pages/Resume";
 export default function About() {
   return (
     <div>
-      <h1>About page</h1>
+      <Resume />
       <Link to="/">Go to home</Link>
     </div>
   );

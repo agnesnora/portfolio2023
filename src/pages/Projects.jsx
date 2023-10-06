@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 export default function Projects() {
   const [projects, setProjects] = useState([]);
+  const [hoveredProject, setHoveredProject] = useState({});
 
   useEffect(() => {
     fetch("/api/projects")
@@ -9,14 +10,32 @@ export default function Projects() {
       .then((data) => setProjects(data.projects));
   }, []);
 
+  function mouseEnter(e) {
+    setHoveredProject(
+      projects.filter((project) => project.id == e.target.dataset.hover)[0]
+    );
+  }
+  function mouseLeave() {
+    setHoveredProject({});
+  }
+
   const projectElements = projects.map((project) => (
     <Link key={project.id} to={`/projects/${project.id}`}>
-      <div key={project.id} className="project-tile">
-        <img src={project.imageUrl} />
-        <div className="project-info">
-          <h3>{project.name}</h3>
+      <div
+        onMouseEnter={mouseEnter}
+        onMouseLeave={mouseLeave}
+        key={project.id}
+        className="project--tile"
+        data-hover={project.id}
+        style={
+          project.id == hoveredProject.id ? { backgroundColor: "red" } : null
+        }
+      >
+        <img src={project.imageUrl} data-hover={project.id} />
+        <div className="project--info">
+          {project.id == hoveredProject.id ? <h3>{project.name}</h3> : null}
         </div>
-        <i className={`project-type ${project.type} selected`}>
+        <i className={`project--type ${project.type} selected`}>
           {project.type}
         </i>
       </div>

@@ -19,8 +19,12 @@ export default function ProjectDetail() {
           <h2>{project.name}</h2>
 
           <p>{project.description}</p>
-          <button className="link-button">Live app</button>
-          <button className="link-button">Source Code</button>
+          <button className="link-button">
+            <a href={project.live}>Live App</a>
+          </button>
+          <button className="link-button">
+            <a href={project.code}>Source code</a>
+          </button>
         </div>
       ) : (
         <h2>Loading...</h2>
