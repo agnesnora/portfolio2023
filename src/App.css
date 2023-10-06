@@ -34,6 +34,14 @@ li {
   .resume--main--container {
     display: flex;
   }
+
+  .project--list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 34px;
+    margin-top: 57px;
+  }
 }
 
 nav a {
@@ -54,14 +62,9 @@ nav a {
   gap: 1em;
 }
 
-/* 
-.project--list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  gap: 34px;
-  margin-top: 57px;
-} */
+.project--hovered {
+  padding: 5em;
+}
 
 .project--tile > img {
   max-width: 100%;
@@ -71,6 +74,44 @@ nav a {
 .navbar--container > a {
   margin: 0 1em;
 }
-.active--link {
-  color: aquamarine;
+
+.project--tile {
+  position: relative;
+  width: 100%;
+}
+
+.project--img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.project--text {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project--tile:hover .project--img {
+  opacity: 0.3;
+}
+
+.project--tile:hover .project--text {
+  opacity: 1;
+}
+
+.project--text {
+  display: block;
+  width: 50%;
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
 }

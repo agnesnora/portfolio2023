@@ -11,15 +11,53 @@ export default function Projects() {
   }, []);
 
   function mouseEnter(e) {
-    setHoveredProject(
-      projects.filter((project) => project.id == e.target.dataset.hover)[0]
-    );
+    if (e.target.dataset.hover) {
+      setHoveredProject(
+        projects.filter((project) => project.id == e.target.dataset.hover)[0]
+      );
+    }
   }
   function mouseLeave() {
     setHoveredProject({});
   }
 
   const projectElements = projects.map((project) => (
+    // <Link key={project.id} to={`/projects/${project.id}`}>
+    //   <div
+    //     onMouseEnter={mouseEnter}
+    //     onMouseLeave={mouseLeave}
+    //     key={project.id}
+    //     className="project--tile"
+    //     data-hover={project.id}
+    //     // style={
+    //     //   project.id == hoveredProject.id ? { backgroundColor: "red" } : null
+    //     // }
+    //   >
+    //     <div
+    //       className="project--hovered"
+    //       style={
+    //         project.id == hoveredProject.id
+    //           ? {
+    //               backgroundImage: `url("${project.imageUrl}")`,
+    //               backgroundSize: "cover",
+    //               backgroundColor: "black",
+    //               opacity: "20%",
+    //             }
+    //           : {
+    //               backgroundImage: `url("${project.imageUrl}")`,
+    //               backgroundSize: "cover",
+    //             }
+    //       }
+    //       data-hover={project.id}
+    //     >
+    //       {" "}
+    //       {/* <img src={project.imageUrl} data-hover={project.id} /> */}
+    //       <div className="project--info">
+    //         {project.id == hoveredProject.id ? <h3>{project.name}</h3> : null}
+    //       </div>
+    //     </div>
+    //   </div>
+    // </Link>
     <Link key={project.id} to={`/projects/${project.id}`}>
       <div
         onMouseEnter={mouseEnter}
@@ -27,17 +65,21 @@ export default function Projects() {
         key={project.id}
         className="project--tile"
         data-hover={project.id}
-        style={
-          project.id == hoveredProject.id ? { backgroundColor: "red" } : null
-        }
+        // style={
+        //   project.id == hoveredProject.id ? { backgroundColor: "red" } : null
+        // }
       >
-        <img src={project.imageUrl} data-hover={project.id} />
+        <img
+          className="project--img"
+          src={project.imageUrl}
+          data-hover={project.id}
+        />
         <div className="project--info">
-          {project.id == hoveredProject.id ? <h3>{project.name}</h3> : null}
+          <div className="project--text">
+            {" "}
+            {project.id == hoveredProject.id ? <h5>{project.name}</h5> : null}
+          </div>
         </div>
-        <i className={`project--type ${project.type} selected`}>
-          {project.type}
-        </i>
       </div>
     </Link>
   ));
