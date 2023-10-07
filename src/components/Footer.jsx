@@ -1,3 +1,7 @@
 export default function Footer() {
-  return <h1>This is the footer</h1>;
+  return (
+    <footer>
+      <p>Agnes Kuti-Palasthy 2023</p>
+    </footer>
+  );
 }
