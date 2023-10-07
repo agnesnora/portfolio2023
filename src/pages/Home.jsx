@@ -1,15 +1,25 @@
 import { Link } from "react-router-dom";
 export default function Home() {
   return (
-    <div>
-      <h1>This is the home page with some fancy info.</h1>
+    <div className="home--container">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae
-        qui vero ducimus praesentium pariatur facilis sit perspiciatis, dolorum
-        necessitatibus doloribus nulla aliquam consequuntur aliquid in vel
-        voluptatum mollitia neque.
+        <span className="text--uppercase">{`<Hello>`}</span>
       </p>
-      <Link to="/about">Go to about</Link>
+      <h1>
+        I am <span>Agnes Kuti-Palasthy</span>
+      </h1>
+      <p>
+        <span>Frontend developer</span>, designer, landscape architect and
+        passionate gardener located in Hungary.
+      </p>
+      <div className="home--link">
+        <Link className="button--link" to="/about">
+          About me
+        </Link>
+        <Link className="button--link" to="/contact">
+          Contact
+        </Link>
+      </div>
     </div>
   );
 }

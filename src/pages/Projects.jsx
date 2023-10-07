@@ -79,11 +79,12 @@ export default function Projects() {
             {" "}
             {project.id == hoveredProject.id ? (
               <div>
-                <ul>
+                <h5>{project.type[0]}</h5>
+                {/* <ul>
                   {project.type.map((type) => (
                     <li key={type}>{type}</li>
                   ))}
-                </ul>
+                </ul> */}
                 <h5>{project.name}</h5>
               </div>
             ) : null}

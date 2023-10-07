@@ -4,7 +4,7 @@ export default function NavBar() {
   const activeStyle = {
     fontWeight: "bold",
     textDecoration: "underline",
-    color: "red",
+    color: "#fa5246",
   };
   return (
     <nav className="navbar--container">
@@ -23,6 +23,12 @@ export default function NavBar() {
         to="/projects"
       >
         Projects
+      </NavLink>
+      <NavLink
+        style={({ isActive }) => (isActive ? activeStyle : null)}
+        to="/contact"
+      >
+        Contact
       </NavLink>
     </nav>
   );

@@ -98,9 +98,11 @@ export default function Resume() {
         </li>
       </ul>
       <div className="resume--footer">
-        <NavLink to="/projects">Explore projects</NavLink>
+        <NavLink className="button--link" to="/projects">
+          Explore projects
+        </NavLink>
 
-        <button>
+        <button className="button--link">
           {" "}
           <a href="../src/AgnesPalasthy CV.pdf">Resume</a>
         </button>

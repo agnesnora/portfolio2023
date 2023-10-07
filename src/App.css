@@ -9,6 +9,7 @@
   --primary-text-color: #00473e;
   --secondary-text-color: #475d5b;
   --highlighted-text-color: #ffa8ba;
+  --tertiary--text-color: #fa5246;
 }
 
 /* font-family: 'Indie Flower', cursive;
@@ -28,21 +29,17 @@ a {
   text-decoration: none;
   font-family: "Nunito", sans-serif;
   color: var(--primary-text-color);
+  /* margin: 0 auto; */
+  padding: 0;
+}
+
+.navbar--container > a {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1em;
 }
 li {
   list-style-type: none;
-}
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  padding: 3em;
-  /* background: rgb(250, 174, 43);
-  background: linear-gradient(
-    90deg,
-    rgba(250, 174, 43, 1) 0%,
-    rgba(250, 82, 70, 1) 74%
-  ); */
 }
 
 .header > h1 {
@@ -76,9 +73,45 @@ footer {
 .resume--about {
   margin: 0 1em;
 }
-
-.resume--container {
+.text--uppercase {
+  text-transform: uppercase;
+}
+.resume--container,
+.home--container {
   padding: 2em;
+}
+.header {
+  display: flex;
+}
+
+.button--link {
+  background-color: #475d5b;
+  color: var(--highlighted-text-color);
+  font-weight: 500;
+  /* display: inline-block; */
+  padding: 0.5em 0.8em;
+  border: none;
+  border-radius: 9px;
+  align-self: center;
+  font-size: 1em;
+}
+
+/* .button--link > a {
+  
+} */
+.button--link {
+  margin-right: 1em;
+}
+.button--link > a {
+  margin-right: 0;
+  margin-top: 0;
+  padding: 0.5em 0.8em;
+  font-weight: 500;
+  color: var(--highlighted-text-color);
+}
+.home--container > h1 {
+  color: var(--highlighted-text-color);
+  font-family: "Nunito", sans-serif;
 }
 .resume--header {
   background-color: var(--primary-text-color);
@@ -98,17 +131,38 @@ footer {
   display: block;
 }
 
+.resume--footer {
+  display: flex;
+  justify-content: space-between;
+}
+
 ul {
   padding-left: 0;
 }
 @media (min-width: 570px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 3em;
+    /* background: rgb(250, 174, 43);
+    background: linear-gradient(
+      90deg,
+      rgba(250, 174, 43, 1) 0%,
+      rgba(250, 82, 70, 1) 74%
+    ); */
+  }
+
   .resume--header,
   .resume--main--container {
     display: flex;
   }
   .resume--footer {
     display: flex;
-    justify-content: left;
+    justify-content: start;
+  }
+  .home--container {
+    font-size: 2em;
   }
 
   /* .project--tile {
