@@ -131,6 +131,15 @@ footer {
   display: block;
 }
 
+button:hover,
+button > a:hover,
+.button--link:hover,
+button:active,
+button > a:active,
+.button--link:active {
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+}
 .resume--footer {
   display: flex;
   justify-content: space-between;
@@ -236,6 +245,7 @@ ul {
   display: block;
   width: 50%;
   background-color: var(--tertiary-bg-color);
-  color: white;
+  color: var(--primary-text-color);
   font-size: 16px;
+  border-radius: 8px;
 }
