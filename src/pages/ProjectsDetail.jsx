@@ -9,26 +9,28 @@ export default function ProjectDetail() {
       .then((data) => setProject(data.projects));
   }, [params.id]);
   return (
-    <div className="project-detail-container">
-      {project ? (
-        <div className="project-detail">
-          <img src={project.imageUrl} />
-          <i className={`project-type ${project.type} selected`}>
-            {project.type}
-          </i>
-          <h2>{project.name}</h2>
+    <div className="project--detail--container">
+      <div className="project--detail">
+        <h2>{project.name}</h2>
+        <img className="project--detail--img" src={project.imageUrl} />
 
-          <p>{project.description}</p>
-          <button className="link-button">
+        <ul>
+          {project.type
+            ? project.type.map((type) => <li key={type}>{type}</li>)
+            : null}
+        </ul>
+      </div>
+      <div>
+        <p>{project.description}</p>
+        <div>
+          <button className="button--link">
             <a href={project.live}>Live App</a>
           </button>
-          <button className="link-button">
+          <button className="button--link">
             <a href={project.code}>Source code</a>
           </button>
         </div>
-      ) : (
-        <h2>Loading...</h2>
-      )}
+      </div>
     </div>
   );
 }

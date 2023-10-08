@@ -74,18 +74,18 @@ export default function Projects() {
           src={project.imageUrl}
           data-hover={project.id}
         />
-        <div className="project--info">
-          <div className="project--text">
+        <div>
+          <div className="project--info">
             {" "}
             {project.id == hoveredProject.id ? (
-              <div>
+              <div className="project--text">
+                <h3>{project.name}</h3>
                 <h5>{project.type[0]}</h5>
                 {/* <ul>
                   {project.type.map((type) => (
                     <li key={type}>{type}</li>
                   ))}
                 </ul> */}
-                <h5>{project.name}</h5>
               </div>
             ) : null}
           </div>
@@ -95,7 +95,8 @@ export default function Projects() {
   ));
   return (
     <div className="project--list--container">
-      <h1>Explore my works</h1>
+      <h1>Explore my projects</h1>
+      <h3>hover and click to find out more</h3>
       <div className="project--list">{projectElements}</div>
     </div>
   );

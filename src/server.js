@@ -8,10 +8,9 @@ createServer({
   seeds(server) {
     server.create("project", {
       id: "1",
-      name: "Movie List App",
-
+      name: "Movie List",
       description:
-        "Solo project. MovieListApp built with React with the given requirements. Own design. ",
+        "Simple searchable movie app built with React with the given requirements. Pop up window with the movie details. Deletable lines and sortable columns.Both the table and the pop up modal can be paged. Own design. ",
       imageUrl: "/src/Movie.png",
       type: ["React", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/movieListApp/",
@@ -19,7 +18,7 @@ createServer({
     });
     server.create("project", {
       id: "2",
-      name: "Quiz",
+      name: "Quizzical",
 
       description:
         "Beach Bum is a van inspired by surfers and travelers. It was created to be a portable home away from home, but with some cool features in it you won't find in an ordinary camper.",
@@ -63,7 +62,7 @@ createServer({
     });
     server.create("project", {
       id: "6",
-      name: "Watchlist",
+      name: "Movie Watchlist",
       live: "https://agnesnora.github.io/Watchlist/",
       code: "https://github.com/agnesnora/Watchlist",
 
