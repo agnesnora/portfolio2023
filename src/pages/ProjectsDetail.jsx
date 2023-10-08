@@ -13,15 +13,18 @@ export default function ProjectDetail() {
       <div className="project--detail">
         <h2>{project.name}</h2>
         <img className="project--detail--img" src={project.imageUrl} />
-
+      </div>
+      <div className="project--detail--info">
+        <p>{project.description}</p>
         <ul>
           {project.type
-            ? project.type.map((type) => <li key={type}>{type}</li>)
+            ? project.type.map((type) => (
+                <li className={type.toLowerCase()} key={type}>
+                  {type}
+                </li>
+              ))
             : null}
         </ul>
-      </div>
-      <div>
-        <p>{project.description}</p>
         <div>
           <button className="button--link">
             <a href={project.live}>Live App</a>

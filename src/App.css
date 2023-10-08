@@ -43,6 +43,10 @@ footer {
 ul {
   padding-left: 0;
 }
+li {
+  display: inline-block;
+  padding: 0.5em 1em;
+}
 
 /***********  B U T T O N S & L I N K S  **************/
 
@@ -97,15 +101,17 @@ a {
   gap: 2em;
 }
 .project--detail--container {
-  margin: 0 auto;
-  text-align: center;
   padding: 1.2em;
-  background-color: var(--secondary-bg-color);
-  margin-top: 2em;
+  background-color: var(--primary-text-color);
+  color: var(--primary-bg-color);
+}
+
+.project--detail--container li {
+  border-radius: 18px;
 }
 
 .project--detail--img {
-  max-width: 50%;
+  max-width: 100%;
 }
 .project--list--container > h1 {
   font-weight: 500;
@@ -126,7 +132,9 @@ a {
 .navbar--container > a {
   margin: 0 1em;
 }
-
+.react {
+  background-color: #fa5246;
+}
 .project--tile {
   position: relative;
   width: 100%;
@@ -293,6 +301,17 @@ button > a:active,
   .home--container {
     font-size: 2em;
   }
+  .project--detail--container {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+  }
+
+  .project--detail--info {
+    margin: 1em;
+    font-size: 0.8em;
+    width: 60%;
+  }
 
   /* .project--tile {
     /* padding: 1em;
@@ -310,4 +329,7 @@ button > a:active,
 } */
 .techstack--list {
   display: flex;
+}
+.techstack--list li:first-of-type {
+  padding-left: 0;
 }

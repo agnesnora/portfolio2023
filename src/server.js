@@ -8,9 +8,9 @@ createServer({
   seeds(server) {
     server.create("project", {
       id: "1",
-      name: "Movie List",
+      name: "Movie List App",
       description:
-        "Simple searchable movie app built with React with the given requirements. Pop up window with the movie details. Deletable lines and sortable columns.Both the table and the pop up modal can be paged. Own design. ",
+        "Simple searchable movie app built with React with the given requirements. Pop up window with the movie details. Deletable lines and sortable columns.Both the table and the pop up mod can be paged. Own design. ",
       imageUrl: "/src/Movie.png",
       type: ["React", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/movieListApp/",
