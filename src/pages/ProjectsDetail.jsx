@@ -35,10 +35,10 @@ export default function ProjectDetail() {
       </div>
 
       <div>
-        <button className="button--link">
+        <button className="button">
           <a href={project.live}>Live App</a>
         </button>
-        <button className="button--link">
+        <button className="button">
           <a href={project.code}>Source code</a>
         </button>
       </div>

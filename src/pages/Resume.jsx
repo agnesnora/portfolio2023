@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Resume() {
   return (
@@ -106,7 +106,7 @@ export default function Resume() {
           Explore projects
         </NavLink>
 
-        <button className="button--link">
+        <button className="button">
           {" "}
           <a href="../src/AgnesPalasthy CV.pdf">Download CV</a>
         </button>

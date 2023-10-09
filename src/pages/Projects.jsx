@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { PiArrowBendRightDownBold } from "react-icons/pi";
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [hoveredProject, setHoveredProject] = useState({});
@@ -96,7 +97,10 @@ export default function Projects() {
   return (
     <div className="project--list--container">
       <h1>Explore my projects</h1>
-      <h3>hover and click to find out more</h3>
+      <h3>
+        hover and click to find out more{" "}
+        <PiArrowBendRightDownBold className="arrow--icon" />
+      </h3>
       <div className="project--list">{projectElements}</div>
     </div>
   );

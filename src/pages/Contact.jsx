@@ -19,7 +19,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div>
+      <div className="social">
         <a
           className="social--icons"
           href="https://www.linkedin.com/in/agnes-nora-palasthy-b41ba378/"
