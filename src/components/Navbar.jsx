@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   const activeStyle = {
-    fontWeight: "bold",
+    fontWeight: "800",
     textDecoration: "underline",
-    color: "#fa5246",
+    color: "#faae2b",
   };
   return (
     <nav className="navbar--container">
