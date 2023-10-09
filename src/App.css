@@ -20,12 +20,13 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--primary-text-color);
   max-width: 1085px;
+  height: 100vh;
 }
 
 /*********** L A Y O U T  **************/
 nav {
   display: flex;
-  /* flex-direction: column; */
+
   margin: 2em 1em 1em 1em;
 }
 li {
@@ -45,9 +46,9 @@ footer {
 }
 
 .home--container {
-  /* background-color: var(--secondary-text-color); */
-  border: 1px red solid;
-  margin: 0 1.5em;
+  border: none;
+  border-radius: 18px;
+  margin: 2em 1.5em;
 }
 .techstack--list {
   display: grid;
@@ -62,30 +63,41 @@ li {
   padding: 0.5em 1em;
 }
 .contact {
-  background-color: var(--primary-text-color);
+  background-color: var(--secondary-text-color);
   width: 90vw;
   margin: 3em auto;
   padding: 1em;
-  text-align: center;
+  display: flex;
   border-radius: 18px;
+  justify-content: space-between;
 }
 .contact--data {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .contact--data > p {
   margin-left: 0.5em;
-  color: var(--highlighted-text-color);
+  color: var(--primary-bg-color);
+  margin-bottom: 0;
 }
 .contact > p,
 .social--icons {
   display: inline-block;
   margin-left: 1em;
-  color: var(--highlighted-text-color);
+  color: var(--primary-bg-color);
+}
+.navbar--container {
+  margin: 0;
+  padding: 2em 0;
 }
 
+.profile--picture {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
 /***********  B U T T O N S & L I N K S  **************/
 
 a {
@@ -95,6 +107,7 @@ a {
   /* margin: 0 auto; */
   padding: 0;
   display: inline-block;
+  transition: 0.3s;
 }
 
 .navbar--container > a {
@@ -105,14 +118,6 @@ a {
   margin: 0 1em;
 }
 
-.profile--picture {
-  border-radius: 50%;
-  width: 10em;
-  height: 10em;
-}
-a {
-  transition: 0.3s;
-}
 .button--link {
   background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);
@@ -142,6 +147,19 @@ a {
   font-family: "Poppins", sans-serif;
   font-size: 1em;
   font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.back--link:hover {
+  background-color: var(--primary-bg-color);
+  color: var(--tertiary--text-color);
+  border-radius: 18px;
+  padding: 0.3em 0.8em;
+}
+
+.back--icon {
+  margin-right: 0.3em;
+  align-self: center;
 }
 
 /*********** P R O J E C T S  **************/
@@ -237,13 +255,14 @@ a {
 
 .project--text > h3 {
   color: var(--primary-bg-color);
-  text-shadow: 1px 1px 2px #fa5246;
+  /* text-shadow: 1px 1px 2px #fa5246; */
   padding: 0.6em 1em;
 }
 
 .project--text > h5 {
   border-radius: 18px;
   background-color: var(--primary-bg-color);
+
   display: inline-block;
   padding: 0.6em 1em;
   opacity: 90%;
@@ -261,7 +280,8 @@ a {
 .project--info {
   display: block;
   width: 50%;
-  background-color: var(--tertiary-bg-color);
+  /* background-color: var(--tertiary-bg-color); */
+  background-color: var(--tertiary--text-color);
   color: var(--primary-text-color);
   font-size: 16px;
   border-radius: 8px;
@@ -271,7 +291,7 @@ a {
 
 h1 {
   font-family: "Nunito", sans-serif;
-  color: #e7f0ed;
+  /* color: #e7f0ed; */
   font-size: 1.5em;
 }
 
@@ -303,7 +323,7 @@ h1 {
   padding: 1em;
 }
 
-.home--container > h1 {
+.home--hero > h1 {
   color: var(--highlighted-text-color);
   font-family: "Nunito", sans-serif;
 }
@@ -342,6 +362,10 @@ button > a:active,
 
 .techstack--list > li {
   padding-left: 0;
+}
+
+.project--detail--type > li {
+  margin: 0.2em;
 }
 
 /*********** @ M E D I A  **************/
@@ -400,6 +424,7 @@ button > a:active,
 
   .home--container {
     background-color: var(--primary-bg-color);
+    display: flex;
   }
   /* .project--tile {
     /* padding: 1em;

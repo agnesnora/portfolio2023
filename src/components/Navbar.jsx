@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 export default function NavBar() {
   const activeStyle = {
     fontWeight: "800",
-    textDecoration: "underline",
-    color: "#faae2b",
+    // textDecoration: "underline",
+    color: " #fa5246",
   };
   return (
     <nav className="navbar--container">
@@ -24,12 +24,12 @@ export default function NavBar() {
       >
         Projects
       </NavLink>
-      <NavLink
+      {/* <NavLink
         style={({ isActive }) => (isActive ? activeStyle : null)}
         to="/contact"
       >
         Contact
-      </NavLink>
+      </NavLink> */}
     </nav>
   );
 }

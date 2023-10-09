@@ -8,13 +8,15 @@ import {
 export default function Contact() {
   return (
     <div className="contact">
-      <div className="contact--data">
-        <FaEnvelope className="social--icons" />
-        <p>agnesnora@gmail.com</p>
-      </div>
-      <div className="contact--data">
-        <FaPhoneSquare className="social--icons" />
-        <p>+36 70 342 8677</p>
+      <div>
+        <div className="contact--data">
+          <FaEnvelope className="social--icons" />
+          <p>agnesnora@gmail.com</p>
+        </div>
+        <div className="contact--data">
+          <FaPhoneSquare className="social--icons" />
+          <p>+36 70 342 8677</p>
+        </div>
       </div>
 
       <div>

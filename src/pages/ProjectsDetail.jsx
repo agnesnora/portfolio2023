@@ -15,14 +15,14 @@ export default function ProjectDetail() {
     <div className="project--detail--container">
       <h2>{project.name}</h2>
       <Link className="back--link" to="/projects">
-        <FaArrowLeft />
+        <FaArrowLeft className="back--icon" />
         Back to projects
       </Link>
       <div className="project--detail">
         <img className="project--detail--img" src={project.imageUrl} />
         <div className="project--detail--info">
           <p>{project.description}</p>
-          <ul>
+          <ul className="project--detail--type">
             {project.type
               ? project.type.map((type) => (
                   <li className={type.toLowerCase()} key={type}>
