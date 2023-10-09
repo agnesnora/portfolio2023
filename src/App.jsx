@@ -24,7 +24,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           {/* <Route path="/contact" element={<Contact />} /> */}
         </Route>
       </Routes>
+
       {/* <App /> */}
     </BrowserRouter>
   </React.StrictMode>
 );
+
+// );

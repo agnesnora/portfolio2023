@@ -17,20 +17,19 @@ export default function Contact() {
           <FaPhoneSquare className="social--icons" />
           <p>+36 70 342 8677</p>
         </div>
-      </div>
-
-      <div className="social">
-        <a
-          className="social--icons"
-          href="https://www.linkedin.com/in/agnes-nora-palasthy-b41ba378/"
-        >
-          {" "}
-          <FaLinkedin />
-        </a>
-        <a className="social--icons" href="https://github.com/agnesnora">
-          {" "}
-          <FaGithub />
-        </a>
+        <div className="social">
+          <a
+            className="social--icons"
+            href="https://www.linkedin.com/in/agnes-nora-palasthy-b41ba378/"
+          >
+            {" "}
+            <FaLinkedin />
+          </a>
+          <a className="social--icons" href="https://github.com/agnesnora">
+            {" "}
+            <FaGithub />
+          </a>
+        </div>
       </div>
     </div>
   );

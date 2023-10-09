@@ -48,7 +48,7 @@ footer {
 .home--container {
   border: none;
   border-radius: 18px;
-  margin: 0.2em 1.5em;
+  margin: 0;
 }
 .techstack--list {
   display: grid;
@@ -64,13 +64,14 @@ li {
 }
 .contact {
   background-color: var(--secondary-text-color);
-  width: 90vw;
+  width: 80vw;
   margin: 3em auto;
   padding: 1em;
-  display: flex;
+  /* text-align: center; */
+  /* display: flex; */
   border-radius: 18px;
-  justify-content: space-between;
-  align-items: center;
+  /* justify-content: space-between;
+  align-items: center; */
 }
 .contact--data {
   display: flex;
@@ -84,16 +85,17 @@ li {
   margin: 0 0 0 0.5em;
 }
 /* .contact > p, */
-.social {
+/* .social {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
+} */
 .social--icons {
   display: inline-block;
   margin-left: 1em;
   color: var(--primary-bg-color);
+  font-size: 1.2em;
 }
 /* .navbar--container {
   margin: 0;
@@ -109,7 +111,7 @@ li {
 
 a {
   text-decoration: none;
-  font-family: "Nunito", sans-serif;
+  font-family: "Inria Sans", sans-serif;
   color: var(--primary-text-color);
   /* margin: 0 auto; */
   padding: 0;
@@ -356,6 +358,13 @@ h1 {
   color: var(--highlighted-text-color);
   font-family: "Nunito", sans-serif;
 }
+.home--hero {
+  width: 100%;
+  padding: 10em;
+  background-image: url("../src/flore.png");
+  margin: 0;
+}
+
 .resume--header {
   background-color: var(--primary-text-color);
   padding: 2em;

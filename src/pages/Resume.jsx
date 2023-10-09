@@ -15,8 +15,8 @@ export default function Resume() {
             <br />
           </h1>
           <p>
-            <span className="highlighted--text">Front-end developer</span> with
-            a background in office furniture, design and sales. Strong
+            <span className="highlighted--text">Frontend developer</span> with a
+            background in office furniture, design and sales. Strong
             communication and problem solving skills.{" "}
           </p>
         </div>
