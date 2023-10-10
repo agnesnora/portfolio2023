@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Contact from "./Contact";
-import floral from "../../public/floral.png";
+
 export default function Home() {
   const [isContact, setIsContact] = useState(false);
 
