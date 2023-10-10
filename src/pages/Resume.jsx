@@ -6,7 +6,7 @@ export default function Resume() {
       <div className="resume--header">
         <img
           className="profile--picture"
-          src="../src/ProfilePicturePalasthy small.png"
+          src="images/ProfilePicturePalasthy small.png"
         />
         <div className="resume--about">
           <h1>
