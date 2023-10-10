@@ -74,7 +74,7 @@ li {
   width: 80vw;
   margin: 3em auto;
   padding: 1em;
-  height: 20%;
+  /* height: 35%; */
   /* text-align: center; */
   /* display: flex; */
   border-radius: 18px;
@@ -103,7 +103,17 @@ li {
   display: inline-block;
   margin-left: 1em;
   color: var(--primary-bg-color);
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.social > a {
+  font-size: 1.5em;
+}
+.social > a:hover {
+  color: var(--tertiary-bg-color);
 }
 /* .navbar--container {
   margin: 0;
@@ -473,6 +483,7 @@ button > a:active,
 
   .contact {
     max-width: 50%;
+    height: 10em;
   }
   .navbar--container > a {
     font-weight: 600;
