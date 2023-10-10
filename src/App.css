@@ -8,7 +8,7 @@
   --tertiary-bg-color: #ffa8ba;
   --primary-text-color: #00473e;
   --secondary-text-color: #7e8f83;
-  --highlighted-text-color: #ffa8ba;
+  --highlighted-text-color: #d37090;
   --tertiary--text-color: #fa5246;
 }
 
@@ -34,7 +34,7 @@ li {
 }
 
 footer {
-  background-color: var(--secondary-text-color);
+  background-color: var(--highlighted-text-color);
   padding: 1em;
   text-align: center;
   color: var(--primary-bg-color);
@@ -47,8 +47,12 @@ footer {
 
 .home--container {
   border: none;
-  border-radius: 18px;
   margin: 0;
+  background-image: url("../src/flore.png");
+  background-repeat: none;
+  background-size: cover;
+  height: 90vh;
+  opacity: 80%;
 }
 .techstack--list {
   display: grid;
@@ -67,6 +71,7 @@ li {
   width: 80vw;
   margin: 3em auto;
   padding: 1em;
+  height: 20%;
   /* text-align: center; */
   /* display: flex; */
   border-radius: 18px;
@@ -164,7 +169,7 @@ a {
 
 .back--link:hover {
   background-color: var(--primary-bg-color);
-  color: var(--tertiary--text-color);
+  color: var(--highlighted-text-color);
   border-radius: 18px;
   padding: 0.3em 0.8em;
 }
@@ -307,8 +312,8 @@ p {
 .project--info {
   display: block;
   width: 50%;
-  /* background-color: var(--tertiary-bg-color); */
-  background-color: var(--tertiary--text-color);
+  background-color: var(--highlighted-text-color);
+  /* background-color: var(--tertiary--text-color); */
   color: var(--primary-text-color);
   font-size: 16px;
   border-radius: 8px;
@@ -331,7 +336,7 @@ h1 {
   /* font-family: "Poppins", sans-serif; */
   font-size: 1em;
   font-weight: 500;
-  color: var(--tertiary--text-color);
+  color: var(--tertiary-bg-color);
 }
 
 .highlighted--text {
@@ -344,6 +349,7 @@ h1 {
 }
 .text--uppercase {
   text-transform: uppercase;
+  font-size: 1.3em;
 }
 
 .project--list--container {
@@ -357,11 +363,12 @@ h1 {
 .home--hero > h1 {
   color: var(--highlighted-text-color);
   font-family: "Nunito", sans-serif;
+  font-size: 2em;
 }
 .home--hero {
   width: 100%;
-  padding: 10em;
-  background-image: url("../src/flore.png");
+  padding: 2em;
+  /* background-image: url("../src/flore.png"); */
   margin: 0;
 }
 
@@ -416,24 +423,28 @@ button > a:active,
   nav {
     display: flex;
     flex-direction: row;
-    /* align-items: center;
-    justify-content: right; */
-    /* padding: 3em; */
-  }
 
+    justify-content: right;
+  }
+  .project--detail--info > p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
   .resume--header,
   .resume--main--container {
     display: flex;
     text-align: left;
     align-items: center;
   }
+
   .resume--footer {
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
+    align-items: center;
   }
-  /* .home--container {
-    font-size: em;
-  } */
+  .resume--footer > .button {
+    margin-top: 0;
+  }
   .project--detail {
     display: flex;
     align-items: start;
@@ -462,12 +473,23 @@ button > a:active,
   }
   .navbar--container > a {
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .home--container {
     background-color: var(--primary-bg-color);
     display: flex;
+    align-items: normal;
+  }
+  .home--hero {
+    width: 70%;
+  }
+  .home--hero > p {
+    font-size: 1.2em;
+  }
+
+  .home--hero > h1 {
+    font-size: 2.3em;
   }
   /* .project--tile {
     /* padding: 1em;
