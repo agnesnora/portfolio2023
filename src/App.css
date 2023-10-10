@@ -48,7 +48,8 @@ footer {
 .home--container {
   border: none;
   margin: 0;
-  background-image: url("/public/images/flore.png");
+  /* background-image: url("/public/images/flore.png"); */
+  background-image: url("/images/flore.png");
   background-repeat: none;
   background-size: cover;
   height: 90vh;

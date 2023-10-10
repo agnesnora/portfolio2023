@@ -8,7 +8,9 @@ export default function Projects() {
   useEffect(() => {
     fetch("/api/projects")
       .then((res) => res.json())
-      .then((data) => setProjects(data.projects));
+      .then((data) => {
+        console.log(data.projects), setProjects(data.projects);
+      });
   }, []);
 
   function mouseEnter(e) {

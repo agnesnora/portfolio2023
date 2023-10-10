@@ -8,7 +8,9 @@ export default function ProjectDetail() {
   useEffect(() => {
     fetch(`/api/projects/${params.id}`)
       .then((res) => res.json())
-      .then((data) => setProject(data.projects));
+      .then((data) => {
+        console.log(data.projects.imageUrl), setProject(data.projects);
+      });
   }, [params.id]);
 
   return (
@@ -19,7 +21,11 @@ export default function ProjectDetail() {
         Back to projects
       </Link>
       <div className="project--detail">
-        <img className="project--detail--img" src={project.imageUrl} />
+        <img
+          className="project--detail--img"
+          // src={`/public/${project.imageUrl}`}
+          src={`/${project.imageUrl}`}
+        />
         <div className="project--detail--info">
           <p>{project.description}</p>
           <ul className="project--detail--type">

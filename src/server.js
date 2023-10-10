@@ -11,7 +11,7 @@ createServer({
       name: "Movie List App",
       description:
         "Simple searchable movie app built with React with the given requirements. Pop up window with the movie details. Deletable lines and sortable columns.Both the table and the pop up mod can be paged. Own design. ",
-      imageUrl: "images//Movie.png",
+      imageUrl: "images/Movie.png",
       type: ["React", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/movieListApp/",
       code: "https://github.com/agnesnora/movieListApp",
@@ -68,7 +68,7 @@ createServer({
 
       description:
         "With this van, you can take your travel life to the next level. The Green Wonder is a sustainable vehicle that's perfect for people who are looking for a stylish, eco-friendly mode of transport that can go anywhere.",
-      imageUrl: "images/Watch.png",
+      imageUrl: "/images/Watch.png",
       type: ["Javascript", "Api", "CSS", "HTML5"],
     });
   },
