@@ -20,7 +20,7 @@ body {
   background-color: var(--primary-bg-color);
   font-family: "Poppins", sans-serif;
   color: var(--primary-text-color);
-  max-width: 1085px;
+  max-width: 1380px;
   height: 100vh;
 }
 
@@ -433,6 +433,10 @@ button > a:active,
 
 /*********** @ M E D I A  **************/
 @media (min-width: 570px) {
+  html,
+  body {
+    margin: 0 auto;
+  }
   nav {
     display: flex;
     flex-direction: row;
