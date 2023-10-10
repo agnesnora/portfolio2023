@@ -12,7 +12,7 @@ export default function Home() {
     <div className="home--container">
       <div className="home--hero">
         <p>
-          <span className="text--uppercase">{`<Hello>`}</span>
+          <span className="text--uppercase">{`<Hello/>`}</span>
         </p>
         <h1>
           I am <span>Agnes Kuti-Palasthy</span>

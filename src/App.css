@@ -10,6 +10,7 @@
   --secondary-text-color: #7e8f83;
   --highlighted-text-color: #d37090;
   --tertiary--text-color: #fa5246;
+  --hover: #475d5b;
 }
 
 html,
@@ -53,8 +54,9 @@ footer {
   background-repeat: none;
   background-size: cover;
   height: 90vh;
-  opacity: 80%;
+  opacity: 90%;
 }
+
 .techstack--list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
@@ -370,7 +372,6 @@ h1 {
   width: 100%;
   padding: 2em;
   /* background-image: url("../src/flore.png"); */
-  margin: 0;
 }
 
 .resume--header {
@@ -399,8 +400,9 @@ button > a:hover,
 button:active,
 button > a:active,
 .button--link:active {
-  background-color: var(--secondary-text-color);
-  color: var(--highlighted-text-color);
+  background-color: var(--hover);
+  color: var(--tertiary-bg-color);
+  font-weight: 600;
 }
 /* .resume--footer {
   display: flex;
@@ -484,6 +486,7 @@ button > a:active,
   }
   .home--hero {
     width: 70%;
+    margin: 0 0 0 7em;
   }
   .home--hero > p {
     font-size: 1.2em;
