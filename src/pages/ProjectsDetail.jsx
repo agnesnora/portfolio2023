@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
+import { motion } from "framer-motion";
 export default function ProjectDetail() {
   const params = useParams();
   const [project, setProject] = useState({});
@@ -14,7 +15,12 @@ export default function ProjectDetail() {
   }, [params.id]);
 
   return (
-    <div className="project--detail--container">
+    <motion.div
+      className="project--detail--container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h2>{project.name}</h2>
       <Link className="back--link" to="/projects">
         <FaArrowLeft className="back--icon" />
@@ -48,6 +54,6 @@ export default function ProjectDetail() {
           <a href={project.code}>Source code</a>
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 }

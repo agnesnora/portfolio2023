@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { PiArrowBendRightDownBold } from "react-icons/pi";
+import { motion } from "framer-motion";
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [hoveredProject, setHoveredProject] = useState({});
@@ -97,13 +98,18 @@ export default function Projects() {
     </Link>
   ));
   return (
-    <div className="project--list--container">
+    <motion.div
+      className="project--list--container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h1>Explore my projects</h1>
       <h3>
         hover and click to find out more{" "}
         <PiArrowBendRightDownBold className="arrow--icon" />
       </h3>
       <div className="project--list">{projectElements}</div>
-    </div>
+    </motion.div>
   );
 }

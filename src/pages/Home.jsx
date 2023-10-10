@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Contact from "./Contact";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [isContact, setIsContact] = useState(false);
@@ -8,8 +9,39 @@ export default function Home() {
   function setContactInfo() {
     setIsContact((prevContact) => !prevContact);
   }
+  // return (
+  //   <div className="home--container">
+  //     <div className="home--hero">
+  //       <p>
+  //         <span className="text--uppercase">{`<Hello/>`}</span>
+  //       </p>
+  //       <h1>
+  //         I am <span>Agnes Kuti-Palasthy</span>
+  //       </h1>
+  //       <p>
+  //         <span>Frontend developer</span>, designer, landscape architect and
+  //         passionate gardener located in Hungary.
+  //       </p>
+  //       <div className="home--link">
+  //         <Link className="button--link" to="/about">
+  //           About me
+  //         </Link>
+  //         <Link onClick={setContactInfo} className="button--link">
+  //           {!isContact ? "Contact" : "Hide contact"}
+  //         </Link>
+  //       </div>
+  //     </div>
+
+  //     {isContact ? <Contact /> : null}
+  //   </div>
+  // );
   return (
-    <div className="home--container">
+    <motion.div
+      className="home--container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <div className="home--hero">
         <p>
           <span className="text--uppercase">{`<Hello/>`}</span>
@@ -32,6 +64,6 @@ export default function Home() {
       </div>
 
       {isContact ? <Contact /> : null}
-    </div>
+    </motion.div>
   );
 }
