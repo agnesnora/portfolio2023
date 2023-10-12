@@ -10,7 +10,7 @@ createServer({
       id: "1",
       name: "Movie List App",
       description:
-        "Simple searchable movie app built with React with the given requirements. Pop up window with the movie details. Deletable lines and sortable columns.Both the table and the pop up mod can be paged. Own design. ",
+        "A simple searchable movie app built with React with the given requirements. Pop-up window with the movie details. Deletable lines and sortable columns. Both the table and the pop-up mode can be paged. Own design.",
       imageUrl: "images/Movie.png",
       type: ["React", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/movieListApp/",
@@ -21,7 +21,7 @@ createServer({
       name: "Quizzical",
 
       description:
-        "This Quizzical app was a solo project as part of React Basics Module of the Scrimba Frontend Career Path. Built from scratch using React, CSS and API. Difficulity can be set by the user. Design from a given Figma file.  ",
+        "This Quizzical app was a solo project as part of the React Basics Module of the Scrimba Frontend Career Path. Built from scratch using React, CSS and API. Difficulty can be set by the user. Design from a given Figma file. ",
       imageUrl: "images/Quizzical.png",
       type: ["React", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/quizzical/",
@@ -31,7 +31,7 @@ createServer({
       id: "3",
       name: "Component library",
       description:
-        "This Component Library was a solo project as part of Advanced React Module of the Scrimba Career Path. Built from scratch, creating reusable components in React. Design from a given Figma file.",
+        "This Component Library was a solo project as part of the Advanced React Module of the Scrimba Career Path. Built from scratch, creating reusable components in React. Design from a given Figma file. ",
       imageUrl: "images/Component.png",
       type: ["React", "CSS", "HTML5"],
       live: "https://clever-kitten-80ba4d.netlify.app/",
@@ -42,7 +42,7 @@ createServer({
       name: "Learning journal",
 
       description:
-        " Learning Journal was a solo project as part of Responsive Design Module of the Scrimba Career Path. Each page built from scratch, made responsive.Built with HTML and CSS, using media queries, mobile first design, relative units, etc. Design from the given Figma file.",
+        " The Learning Journal was a solo project as part of the Responsive Design Module of the Scrimba Career Path. Each page was built from scratch and made responsive. Built with HTML and CSS, using media queries, mobile-first design, relative units, etc. Design from the given Figma file.",
       imageUrl: "images/Journal.png",
       type: ["Responsive", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/learning-journal/",
@@ -53,7 +53,7 @@ createServer({
       name: "Color Scheme Generator",
 
       description:
-        "Color Scheme Generator was a solo project as part of Working with APIs Module of the Scrimba Career Path. User can choose 'seed color' and color scheme mode. Clicking the button makes request to the Color API to get a color scheme.",
+        "The Color Scheme Generator was a solo project as part of the Working with APIs Module of the Scrimba Career Path. The user can choose 'seed color' and color scheme mode. Clicking the button makes a request to the Color API to get a color scheme.",
       imageUrl: "images/Color.png",
       type: ["Javascript", "API", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/color-scheme-generator/",
@@ -67,7 +67,7 @@ createServer({
       code: "https://github.com/agnesnora/Watchlist",
 
       description:
-        "Watchlist was a solo project as part of Working with APIs Module of the Scrimba Career Path. The index page calls to OMDB API with the title searched for and displays the search results. With a button 'add to watchlist' which saves the data to local storage. ",
+        "Watchlist was a solo project as part of the Working with APIs Module of the Scrimba Career Path. The index page calls the OMDB API with the title searched for and displays the search results. With a button, 'add to watchlist' which saves the data to local storage. ",
 
       type: ["Javascript", "API", "CSS", "HTML5"],
     });
