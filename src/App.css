@@ -20,7 +20,7 @@ body {
   background-color: var(--primary-bg-color);
   font-family: "Poppins", sans-serif;
   color: var(--primary-text-color);
-  max-width: 1380px;
+  max-width: 1085px;
   height: 100vh;
 }
 
@@ -369,13 +369,13 @@ h1 {
   background-color: var(--secondary-text-color);
   /* background-color: var(--primary-text-color); */
   padding: 2em;
-  margin: 1em;
+  margin: 1em 0;
   border-radius: 18px;
 }
 
 .home--hero > h1 {
   color: var(--highlighted-text-color);
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2em;
 }
 .home--hero {
@@ -390,7 +390,7 @@ h1 {
   margin: 0 auto;
   text-align: center;
   color: var(--primary-bg-color);
-  border-radius: 18px;
+  /* border-radius: 18px; */
 }
 .resume--header > p {
   font-size: 2em;

@@ -21,7 +21,7 @@ createServer({
       name: "Quizzical",
 
       description:
-        "Beach Bum is a van inspired by surfers and travelers. It was created to be a portable home away from home, but with some cool features in it you won't find in an ordinary camper.",
+        "This Quizzical app was a solo project as part of React Basics Module of the Scrimba Frontend Career Path. Built from scratch using React, CSS and API. Difficulity can be set by the user. Design from a given Figma file.  ",
       imageUrl: "images/Quizzical.png",
       type: ["React", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/quizzical/",
@@ -30,9 +30,8 @@ createServer({
     server.create("project", {
       id: "3",
       name: "Component library",
-
       description:
-        "Reliable Red is a van that was made for travelling. The inside is comfortable and cozy, with plenty of space to stretch out in. There's a small kitchen, so you can cook if you need to. You'll feel like home as soon as you step out of it.",
+        "This Component Library was a solo project as part of Advanced React Module of the Scrimba Career Path. Built from scratch, creating reusable components in React. Design from a given Figma file.",
       imageUrl: "images/Component.png",
       type: ["React", "CSS", "HTML5"],
       live: "https://clever-kitten-80ba4d.netlify.app/",
@@ -43,7 +42,7 @@ createServer({
       name: "Learning journal",
 
       description:
-        "Dreamfinder is the perfect van to travel in and experience. With a ceiling height of 2.1m, you can stand up in this van and there is great head room. The floor is a beautiful glass-reinforced plastic (GRP) which is easy to clean and very hard wearing. A large rear window and large side windows make it really light inside and keep it well ventilated.",
+        " Learning Journal was a solo project as part of Responsive Design Module of the Scrimba Career Path. Each page built from scratch, made responsive.Built with HTML and CSS, using media queries, mobile first design, relative units, etc. Design from the given Figma file.",
       imageUrl: "images/Journal.png",
       type: ["Responsive", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/learning-journal/",
@@ -54,22 +53,23 @@ createServer({
       name: "Color Scheme Generator",
 
       description:
-        "The Cruiser is a van for those who love to travel in comfort and luxury. With its many windows, spacious interior and ample storage space, the Cruiser offers a beautiful view wherever you go.",
+        "Color Scheme Generator was a solo project as part of Working with APIs Module of the Scrimba Career Path. User can choose 'seed color' and color scheme mode. Clicking the button makes request to the Color API to get a color scheme.",
       imageUrl: "images/Color.png",
-      type: ["Javascript", "Api", "CSS", "HTML5"],
+      type: ["Javascript", "API", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/color-scheme-generator/",
       code: "https://github.com/agnesnora/color-scheme-generator",
     });
     server.create("project", {
       id: "6",
       name: "Movie Watchlist",
+      imageUrl: "images/Watch.png",
       live: "https://agnesnora.github.io/Watchlist/",
       code: "https://github.com/agnesnora/Watchlist",
 
       description:
-        "With this van, you can take your travel life to the next level. The Green Wonder is a sustainable vehicle that's perfect for people who are looking for a stylish, eco-friendly mode of transport that can go anywhere.",
-      imageUrl: "/images/Watch.png",
-      type: ["Javascript", "Api", "CSS", "HTML5"],
+        "Watchlist was a solo project as part of Working with APIs Module of the Scrimba Career Path. The index page calls to OMDB API with the title searched for and displays the search results. With a button 'add to watchlist' which saves the data to local storage. ",
+
+      type: ["Javascript", "API", "CSS", "HTML5"],
     });
   },
 

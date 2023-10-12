@@ -5,14 +5,36 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [hoveredProject, setHoveredProject] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [err, setErr] = useState(false);
+
+  async function getProjects() {
+    const res = await fetch("/api/projects");
+    const data = await res.json();
+    return data.projects;
+  }
 
   useEffect(() => {
-    fetch("/api/projects")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data.projects), setProjects(data.projects);
-      });
+    async function loadProjects() {
+      setLoading(true);
+      try {
+        const data = await getProjects();
+        setProjects(data);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadProjects();
   }, []);
+  // useEffect(() => {
+  //   fetch("/api/projects")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data.projects), setProjects(data.projects);
+  //     });
+  // }, []);
 
   function mouseEnter(e) {
     if (e.target.dataset.hover) {
@@ -24,7 +46,9 @@ export default function Projects() {
   function mouseLeave() {
     setHoveredProject({});
   }
-
+  if (loading) {
+    return <h1>Loading...</h1>;
+  }
   const projectElements = projects.map((project) => (
     // <Link key={project.id} to={`/projects/${project.id}`}>
     //   <div
@@ -97,12 +121,13 @@ export default function Projects() {
       </div>
     </Link>
   ));
-  return (
+  return projects ? (
     <motion.div
       className="project--list--container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      // exit={{ opacity: 0 }}
+      transition={{ duration: 2 }}
     >
       <h1>Explore my projects</h1>
       <h3>
@@ -111,5 +136,5 @@ export default function Projects() {
       </h3>
       <div className="project--list">{projectElements}</div>
     </motion.div>
-  );
+  ) : null;
 }

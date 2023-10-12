@@ -14,12 +14,13 @@ export default function ProjectDetail() {
       });
   }, [params.id]);
 
-  return (
+  return project ? (
     <motion.div
       className="project--detail--container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      // exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
     >
       <h2>{project.name}</h2>
       <Link className="back--link" to="/projects">
@@ -55,5 +56,5 @@ export default function ProjectDetail() {
         </button>
       </div>
     </motion.div>
-  );
+  ) : null;
 }

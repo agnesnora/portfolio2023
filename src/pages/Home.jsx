@@ -9,38 +9,14 @@ export default function Home() {
   function setContactInfo() {
     setIsContact((prevContact) => !prevContact);
   }
-  // return (
-  //   <div className="home--container">
-  //     <div className="home--hero">
-  //       <p>
-  //         <span className="text--uppercase">{`<Hello/>`}</span>
-  //       </p>
-  //       <h1>
-  //         I am <span>Agnes Kuti-Palasthy</span>
-  //       </h1>
-  //       <p>
-  //         <span>Frontend developer</span>, designer, landscape architect and
-  //         passionate gardener located in Hungary.
-  //       </p>
-  //       <div className="home--link">
-  //         <Link className="button--link" to="/about">
-  //           About me
-  //         </Link>
-  //         <Link onClick={setContactInfo} className="button--link">
-  //           {!isContact ? "Contact" : "Hide contact"}
-  //         </Link>
-  //       </div>
-  //     </div>
 
-  //     {isContact ? <Contact /> : null}
-  //   </div>
-  // );
   return (
     <motion.div
       className="home--container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
     >
       <div className="home--hero">
         <p>
@@ -50,7 +26,7 @@ export default function Home() {
           I am <span>Agnes Kuti-Palasthy</span>
         </h1>
         <p>
-          <span>Frontend developer</span>, designer, landscape architect and
+          <span>Frontend developer</span>, designer, landscape architect and a
           passionate gardener located in Hungary.
         </p>
         <div className="home--link">
