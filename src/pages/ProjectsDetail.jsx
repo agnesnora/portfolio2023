@@ -49,10 +49,14 @@ export default function ProjectDetail() {
 
       <div>
         <button className="button">
-          <a href={project.live}>Live App</a>
+          <a href={project.live} target="_blank" rel="noopener noreferrer">
+            Live App
+          </a>
         </button>
         <button className="button">
-          <a href={project.code}>Source code</a>
+          <a href={project.code} target="_blank" rel="noopener noreferrer">
+            Source code
+          </a>
         </button>
       </div>
     </motion.div>

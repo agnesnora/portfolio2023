@@ -121,7 +121,13 @@ export default function Resume() {
 
         <button className="button">
           {" "}
-          <a href="/images/AgnesKutiPalasthyCV.pdf">Download CV</a>
+          <a
+            href="/images/AgnesKutiPalasthyCV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download CV
+          </a>
         </button>
       </div>
     </div>
