@@ -5,14 +5,33 @@ import { motion } from "framer-motion";
 export default function ProjectDetail() {
   const params = useParams();
   const [project, setProject] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [err, setErr] = useState(false);
+
+  async function getProjects() {
+    const res = await fetch(`/api/projects/${params.id}`);
+    const data = await res.json();
+    return data.projects;
+  }
 
   useEffect(() => {
-    fetch(`/api/projects/${params.id}`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data.projects.imageUrl), setProject(data.projects);
-      });
+    async function loadProject() {
+      setLoading(true);
+      try {
+        const data = await getProjects();
+        setProject(data);
+      } catch (err) {
+        setErr(err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadProject();
   }, [params.id]);
+
+  if (loading) {
+    return <h1>Loading...</h1>;
+  }
 
   return project ? (
     <motion.div
@@ -30,7 +49,7 @@ export default function ProjectDetail() {
       <div className="project--detail">
         <img
           className="project--detail--img"
-          // src={`/public/${project.imageUrl}`}
+          alt={`snapshot of ${project.name} project`}
           src={`/${project.imageUrl}`}
         />
         <div className="project--detail--info">

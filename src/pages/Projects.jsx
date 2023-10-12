@@ -21,20 +21,13 @@ export default function Projects() {
         const data = await getProjects();
         setProjects(data);
       } catch (err) {
-        setError(err);
+        setErr(err);
       } finally {
         setLoading(false);
       }
     }
     loadProjects();
   }, []);
-  // useEffect(() => {
-  //   fetch("/api/projects")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data.projects), setProjects(data.projects);
-  //     });
-  // }, []);
 
   function mouseEnter(e) {
     if (e.target.dataset.hover) {
@@ -50,42 +43,6 @@ export default function Projects() {
     return <h1>Loading...</h1>;
   }
   const projectElements = projects.map((project) => (
-    // <Link key={project.id} to={`/projects/${project.id}`}>
-    //   <div
-    //     onMouseEnter={mouseEnter}
-    //     onMouseLeave={mouseLeave}
-    //     key={project.id}
-    //     className="project--tile"
-    //     data-hover={project.id}
-    //     // style={
-    //     //   project.id == hoveredProject.id ? { backgroundColor: "red" } : null
-    //     // }
-    //   >
-    //     <div
-    //       className="project--hovered"
-    //       style={
-    //         project.id == hoveredProject.id
-    //           ? {
-    //               backgroundImage: `url("${project.imageUrl}")`,
-    //               backgroundSize: "cover",
-    //               backgroundColor: "black",
-    //               opacity: "20%",
-    //             }
-    //           : {
-    //               backgroundImage: `url("${project.imageUrl}")`,
-    //               backgroundSize: "cover",
-    //             }
-    //       }
-    //       data-hover={project.id}
-    //     >
-    //       {" "}
-    //       {/* <img src={project.imageUrl} data-hover={project.id} /> */}
-    //       <div className="project--info">
-    //         {project.id == hoveredProject.id ? <h3>{project.name}</h3> : null}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </Link>
     <Link key={project.id} to={`/projects/${project.id}`}>
       <div
         onMouseEnter={mouseEnter}
@@ -93,14 +50,12 @@ export default function Projects() {
         key={project.id}
         className="project--tile"
         data-hover={project.id}
-        // style={
-        //   project.id == hoveredProject.id ? { backgroundColor: "red" } : null
-        // }
       >
         <img
           className="project--img"
           src={project.imageUrl}
           data-hover={project.id}
+          alt={`snapshot of ${project.name} project`}
         />
         <div>
           <div className="project--info">
@@ -109,11 +64,6 @@ export default function Projects() {
               <div className="project--text">
                 <h3>{project.name}</h3>
                 <h5>{project.type[0]}</h5>
-                {/* <ul>
-                  {project.type.map((type) => (
-                    <li key={type}>{type}</li>
-                  ))}
-                </ul> */}
               </div>
             ) : null}
           </div>

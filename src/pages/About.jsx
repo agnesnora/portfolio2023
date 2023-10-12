@@ -1,14 +1,8 @@
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import Resume from "../pages/Resume";
 export default function About() {
   return (
-    <motion.div
-    // // initial={{ opacity: 1 }}
-    // animate={{ opacity: 1 }}
-    // exit={{ opacity: 0 }}
-    >
+    <div>
       <Resume />
-    </motion.div>
+    </div>
   );
 }
