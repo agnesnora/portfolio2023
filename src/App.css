@@ -27,7 +27,6 @@ body {
 /*********** L A Y O U T  **************/
 nav {
   display: flex;
-
   margin: 1em 1em 0.5em 1em;
 }
 li {
@@ -49,7 +48,6 @@ footer {
 .home--container {
   border: none;
   margin: 0;
-  /* background-image: url("/public/images/flore.png"); */
   background-image: url("/images/flore.png");
   background-repeat: none;
   background-size: cover;
@@ -74,12 +72,7 @@ li {
   width: 80vw;
   margin: 3em auto;
   padding: 1em;
-  /* height: 35%; */
-  /* text-align: center; */
-  /* display: flex; */
   border-radius: 18px;
-  /* justify-content: space-between;
-  align-items: center; */
 }
 .contact--data {
   display: flex;
@@ -92,13 +85,7 @@ li {
   color: var(--primary-bg-color);
   margin: 0 0 0 0.5em;
 }
-/* .contact > p, */
-/* .social {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-} */
+
 .social--icons {
   display: inline-block;
   margin-left: 1em;
@@ -115,10 +102,6 @@ li {
 .social > a:hover {
   color: var(--tertiary-bg-color);
 }
-/* .navbar--container {
-  margin: 0;
-  padding: 2em 0;
-} */
 
 .profile--picture {
   border-radius: 50%;
@@ -143,7 +126,6 @@ a {
   font-size: 0.9em;
   font-family: "Nunito", sans-serif;
   margin-right: 0.8em;
-  /* margin: 0 auto; */
 }
 
 .button--link,
@@ -151,7 +133,6 @@ a {
   background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);
   font-weight: 500;
-  /* display: inline-block; */
   padding: 0.5em 0.8em;
   border: none;
   border-radius: 9px;
@@ -300,7 +281,6 @@ p {
 
 .project--text > h3 {
   color: var(--primary-bg-color);
-  /* text-shadow: 1px 1px 2px #fa5246; */
   padding: 0.6em 1em;
 }
 
@@ -326,7 +306,6 @@ p {
   display: block;
   width: 50%;
   background-color: var(--highlighted-text-color);
-  /* background-color: var(--tertiary--text-color); */
   color: var(--primary-text-color);
   font-size: 16px;
   border-radius: 8px;
@@ -336,7 +315,6 @@ p {
 
 h1 {
   font-family: "Nunito", sans-serif;
-  /* color: #e7f0ed; */
   font-size: 1.5em;
 }
 
@@ -346,7 +324,6 @@ h1 {
 
 .project--list--container > h3 {
   font-family: "Inria Sans", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
   font-size: 1em;
   font-weight: 500;
   color: var(--tertiary-bg-color);
@@ -367,7 +344,6 @@ h1 {
 
 .project--list--container {
   background-color: var(--secondary-text-color);
-  /* background-color: var(--primary-text-color); */
   padding: 2em;
   margin: 1em 0;
   border-radius: 18px;
@@ -381,7 +357,6 @@ h1 {
 .home--hero {
   width: 100%;
   padding: 2em;
-  /* background-image: url("../src/flore.png"); */
 }
 
 .resume--header {
@@ -390,7 +365,6 @@ h1 {
   margin: 0 auto;
   text-align: center;
   color: var(--primary-bg-color);
-  /* border-radius: 18px; */
 }
 .resume--header > p {
   font-size: 2em;
@@ -414,10 +388,6 @@ button > a:active,
   color: var(--tertiary-bg-color);
   font-weight: 600;
 }
-/* .resume--footer {
-  display: flex;
-  justify-content: space-between;
-} */
 
 .techstack--list > li {
   padding-left: 0;
@@ -426,10 +396,6 @@ button > a:active,
 .project--detail--type > li {
   margin: 0.2em;
 }
-
-/* .arrow--icon {
-  align-self: flex-end;
-} */
 
 /*********** @ M E D I A  **************/
 @media (min-width: 570px) {
@@ -456,7 +422,6 @@ button > a:active,
 
   .resume--footer {
     display: flex;
-    /* justify-content: start; */
     align-items: center;
   }
   .resume--footer > .button {
@@ -473,8 +438,6 @@ button > a:active,
   .project--detail--info {
     margin: 0 0 0 1.5em;
     font-size: 0.8em;
-    /* padding-top: 0; */
-    /* width: 80%; */
   }
 
   .project--detail--info > p {
@@ -510,23 +473,4 @@ button > a:active,
   .home--hero > h1 {
     font-size: 2.3em;
   }
-  /* .project--tile {
-    /* padding: 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em; */
 }
-
-/* nav a {
-  text-decoration: none;
-  margin: 1em 0;
-} */
-/* .resume--about{
-
-} */
-/* .techstack--list {
-  display: flex;
-} */
-/* .techstack--list li:first-of-type {
-  padding-left: 0;
-} */
