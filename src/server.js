@@ -16,6 +16,7 @@ createServer({
       live: "https://agnesnora.github.io/movieListApp/",
       code: "https://github.com/agnesnora/movieListApp",
     });
+
     server.create("project", {
       id: "2",
       name: "Quizzical",
@@ -29,14 +30,17 @@ createServer({
     });
     server.create("project", {
       id: "3",
-      name: "Component library",
+      name: "Tindog",
+      imageUrl: "images/Tindog.png",
+      live: "https://tindogagnesnora.netlify.app",
+      code: "https://github.com/agnesnora/tindogReact",
+
       description:
-        "This Component Library was a solo project as part of the Advanced React Module of the Scrimba Career Path. Built from scratch, creating reusable components in React. Design from a given Figma file. ",
-      imageUrl: "images/Component.png",
-      type: ["React", "CSS", "HTML5"],
-      live: "https://clever-kitten-80ba4d.netlify.app/",
-      code: "https://github.com/agnesnora/componentLibrary",
+        "Tindog is a dating app for dogs, which was a solo project of Scrimba Career Path. The main feature was to pop up a like/nope badge on the dogs after clicking on the like or dislike buttons. I expanded it with a chat feature, and the users can also save the liked dogs in their profile",
+
+      type: ["React", "Responsive", "HTML5"],
     });
+
     server.create("project", {
       id: "4",
       name: "Learning journal",
@@ -59,17 +63,16 @@ createServer({
       live: "https://agnesnora.github.io/color-scheme-generator/",
       code: "https://github.com/agnesnora/color-scheme-generator",
     });
+
     server.create("project", {
       id: "6",
-      name: "Movie Watchlist",
-      imageUrl: "images/Watch.png",
-      live: "https://agnesnora.github.io/Watchlist/",
-      code: "https://github.com/agnesnora/Watchlist",
-
+      name: "Component library",
       description:
-        "Watchlist was a solo project as part of the Working with APIs Module of the Scrimba Career Path. The index page calls the OMDB API with the title searched for and displays the search results. With a button, 'add to watchlist' which saves the data to local storage. ",
-
-      type: ["Javascript", "API", "CSS", "HTML5"],
+        "This Component Library was a solo project as part of the Advanced React Module of the Scrimba Career Path. Built from scratch, creating reusable components in React. Design from a given Figma file. ",
+      imageUrl: "images/Component.png",
+      type: ["React", "CSS", "HTML5"],
+      live: "https://clever-kitten-80ba4d.netlify.app/",
+      code: "https://github.com/agnesnora/componentLibrary",
     });
   },
 
