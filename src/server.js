@@ -36,7 +36,7 @@ createServer({
       code: "https://github.com/agnesnora/tindogReact",
 
       description:
-        "Tindog is a dating app for dogs, which was a solo project of Scrimba Career Path. The main feature was to pop up a like/nope badge on the dogs after clicking on the like or dislike buttons. I expanded it with a chat feature, and the users can also save the liked dogs in their profile",
+        "Tindog is a dating app for dogs, which was a solo project of Scrimba Career Path. The main feature was to pop up a like/nope badge on the dog's image after clicking on the like or dislike buttons. I expanded it with a chat feature, and the users can also save the liked dogs in their profile",
 
       type: ["React", "Responsive", "HTML5"],
     });
