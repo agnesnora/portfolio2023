@@ -48,7 +48,8 @@ footer {
 .home--container {
   border: none;
   margin: 0;
-  background-image: url("/images/flore.png");
+  background-image: url("/images/Leaf.png");
+
   background-repeat: none;
   background-size: cover;
   height: 90vh;
@@ -357,6 +358,11 @@ h1 {
 .home--hero {
   width: 100%;
   padding: 2em;
+  background-color: #f2f7f5;
+  height: max-content;
+  width: 100%;
+
+  opacity: 0.9;
 }
 
 .resume--header {
@@ -463,8 +469,10 @@ button > a:active,
     align-items: normal;
   }
   .home--hero {
-    width: 70%;
-    margin: 0 0 0 7em;
+    padding: 1em;
+    background-color: #f2f7f5;
+    height: max-content;
+    width: 90%;
   }
   .home--hero > p {
     font-size: 1.2em;
