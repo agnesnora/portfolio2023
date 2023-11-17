@@ -22,7 +22,7 @@ createServer({
       name: "Quizzical",
 
       description:
-        "This Quizzical app was a solo project as part of the React Basics Module of the Scrimba Frontend Career Path. Built from scratch using React, CSS and API. Difficulty can be set by the user. Design from a given Figma file. ",
+        "This Quizzical app was a solo project as part of the React Basics Module of the Scrimba Frontend Career Path. Built from scratch using React, CSS and API. Own design with surprise confetti. ",
       imageUrl: "images/Quizzical.png",
       type: ["React", "CSS", "HTML5"],
       live: "https://agnesnora.github.io/quizzical/",
