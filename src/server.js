@@ -17,17 +17,17 @@ createServer({
       code: "https://github.com/agnesnora/movieListApp",
     });
 
-    // server.create("project", {
-    //   id: "2",
-    //   name: "Quizzical",
+    server.create("project", {
+      id: "2",
+      name: "Quizzical",
 
-    //   description:
-    //     "This Quizzical app was a solo project as part of the React Basics Module of the Scrimba Frontend Career Path. Built from scratch using React, CSS and API. Difficulty can be set by the user. Design from a given Figma file. ",
-    //   imageUrl: "images/Quizzical.png",
-    //   type: ["React", "CSS", "HTML5"],
-    //   live: "https://agnesnora.github.io/quizzical/",
-    //   code: "https://github.com/agnesnora/quizzical",
-    // });
+      description:
+        "This Quizzical app was a solo project as part of the React Basics Module of the Scrimba Frontend Career Path. Built from scratch using React, CSS and API. Difficulty can be set by the user. Design from a given Figma file. ",
+      imageUrl: "images/Quizzical.png",
+      type: ["React", "CSS", "HTML5"],
+      live: "https://agnesnora.github.io/quizzical/",
+      code: "https://github.com/agnesnora/quizzical",
+    });
     server.create("project", {
       id: "3",
       name: "Tindog",
