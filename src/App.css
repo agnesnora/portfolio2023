@@ -20,7 +20,7 @@ body {
   background-color: var(--primary-bg-color);
   font-family: "Poppins", sans-serif;
   color: var(--primary-text-color);
-  max-width: 1085px;
+  max-width: 2000px;
   height: 100vh;
 }
 
@@ -408,6 +408,9 @@ button > a:active,
   html,
   body {
     margin: 0 auto;
+  }
+  .project--list {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
   nav {
     display: flex;
