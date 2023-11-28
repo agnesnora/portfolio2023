@@ -57,7 +57,7 @@ createServer({
       name: "Color Scheme Generator",
 
       description:
-        "The Color Scheme Generator was a solo project as part of the Working with APIs Module of the Scrimba Career Path. The user can choose 'seed color' and color scheme mode. Clicking the button makes a request to the Color API to get a color scheme.",
+        "The Color Scheme Generator was a solo project as part of the Working with APIs Module of the Scrimba Career Path. The user can choose 'seed color' and color scheme mode. Clicking the button makes a request to the Color API to get a color scheme. As a stretch goal I have added a day/night button and the possibility to save the favourite schemes to the user's profile. Own design.  ",
       imageUrl: "images/Color.png",
       type: ["React", "API", "CSS"],
       live: "https://coloragnesnora.netlify.app",
