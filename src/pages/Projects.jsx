@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { PiArrowBendRightDownBold } from "react-icons/pi";
 import { motion } from "framer-motion";
-export default function Projects() {
+export default function Projects(props) {
   const [projects, setProjects] = useState([]);
   const [hoveredProject, setHoveredProject] = useState({});
   const [loading, setLoading] = useState(false);
@@ -42,7 +42,9 @@ export default function Projects() {
   if (loading) {
     return <h1>Loading...</h1>;
   }
-  const projectElements = projects.map((project) => (
+  const projectElements = (
+    props.featured ? projects.slice(0, 3) : projects
+  ).map((project) => (
     <Link key={project.id} to={`/projects/${project.id}`}>
       <div
         onMouseEnter={mouseEnter}
@@ -79,7 +81,9 @@ export default function Projects() {
       // exit={{ opacity: 0 }}
       transition={{ duration: 2 }}
     >
-      <h1>Explore my projects</h1>
+      <h1 className={props.featured ? "featured" : ""}>
+        {props.featured ? "Some of my latest work" : "Explore my projects"}
+      </h1>
       <h3>
         hover and click to find out more{" "}
         <PiArrowBendRightDownBold className="arrow--icon" />

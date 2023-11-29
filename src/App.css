@@ -44,7 +44,10 @@ footer {
 .home--container {
   padding: 1em;
 }
-
+.featured {
+  font-size: 1.1rem;
+  text-align: center;
+}
 .home--container {
   border: none;
   margin: 0;
@@ -52,7 +55,7 @@ footer {
 
   background-repeat: none;
   background-size: cover;
-  height: 90vh;
+
   opacity: 90%;
 }
 

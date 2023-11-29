@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Contact from "./Contact";
 import { motion } from "framer-motion";
-
+import Projects from "../pages/Projects";
 export default function Home() {
   const [isContact, setIsContact] = useState(false);
 
@@ -40,6 +40,7 @@ export default function Home() {
       </div>
 
       {isContact ? <Contact /> : null}
+      <Projects className="somethingelse" featured={true} />
     </motion.div>
   );
 }
