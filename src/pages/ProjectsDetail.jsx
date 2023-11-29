@@ -46,6 +46,11 @@ export default function ProjectDetail() {
         <FaArrowLeft className="back--icon" />
         Back to projects
       </Link>
+      <Link className="back--link" to="/">
+        <FaArrowLeft className="back--icon" />
+        Back to Home
+      </Link>
+
       <div className="project--detail">
         <img
           className="project--detail--img"
