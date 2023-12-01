@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-:root {
+/* :root {
   --primary-bg-color: #f2f7f5;
   --secondary-bg-color: #faae2b;
   --tertiary-bg-color: #ffa8ba;
@@ -11,6 +11,16 @@
   --highlighted-text-color: #d37090;
   --tertiary--text-color: #fa5246;
   --hover: #475d5b;
+} */
+:root {
+  --primary-bg-color: #10080d;
+  --secondary-bg-color: #3d3456;
+  --tertiary-bg-color: #d8c9de;
+  --primary-text-color: #fcfdff;
+  --secondary-text-color: #3d3456;
+  --highlighted-text-color: #d8c9de;
+  --tertiary--text-color: #d8c9de;
+  --hover: #e8eb50;
 }
 
 html,
@@ -51,10 +61,10 @@ footer {
 .home--container {
   border: none;
   margin: 0;
-  background-image: url("/images/Leaf.png");
+  /* background-image: url("/images/Leaf.png");
 
   background-repeat: none;
-  background-size: cover;
+  background-size: cover; */
 
   opacity: 90%;
 }
@@ -165,6 +175,10 @@ a {
   margin-bottom: 1em;
 }
 
+.back--link:last-child {
+  margin-left: 1.5em;
+}
+
 .back--link:hover {
   background-color: var(--primary-bg-color);
   color: var(--highlighted-text-color);
@@ -176,7 +190,10 @@ a {
   margin-right: 0.3em;
   align-self: center;
 }
-
+.go--back--btn {
+  display: flex;
+  justify-content: left;
+}
 /*********** P R O J E C T S  **************/
 
 .project--list {
@@ -185,6 +202,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 0.8em;
 }
+
 .project--detail--container {
   padding: 1.2em;
   background-color: var(--primary-text-color);
@@ -208,7 +226,8 @@ p {
 .project--list--container > h1 {
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--primary-bg-color);
+  /* color: var(--primary-bg-color); */
+  color: var(--primary-text-color);
 }
 .project--list--container {
   padding-inline: 23px;
@@ -284,7 +303,7 @@ p {
 }
 
 .project--text > h3 {
-  color: var(--primary-bg-color);
+  color: var(--secondary-bg-color);
   padding: 0.6em 1em;
 }
 
@@ -309,7 +328,8 @@ p {
 .project--info {
   display: block;
   width: 50%;
-  background-color: var(--highlighted-text-color);
+  /* background-color: var(--highlighted-text-color); */
+  background-color: var(--hover);
   color: var(--primary-text-color);
   font-size: 16px;
   border-radius: 8px;
@@ -334,7 +354,7 @@ h1 {
 }
 
 .highlighted--text {
-  color: var(--highlighted-text-color);
+  color: var(--secondary-text-color);
   font-weight: 600;
 }
 
@@ -349,8 +369,8 @@ h1 {
 .project--list--container {
   background-color: var(--secondary-text-color);
   padding: 2em;
-  margin: 1em 0;
-  border-radius: 18px;
+  margin-top: 1em;
+  /* border-radius: 18px; */
 }
 
 .home--hero > h1 {
@@ -360,8 +380,8 @@ h1 {
 }
 .home--hero {
   width: 100%;
-  padding: 2em;
-  background-color: #f2f7f5;
+  padding-bottom: 2em;
+  /* background-color: #f2f7f5; */
   height: max-content;
   width: 100%;
 
@@ -369,7 +389,7 @@ h1 {
 }
 
 .resume--header {
-  background-color: var(--primary-text-color);
+  background-color: var(--tertiary-bg-color);
   padding: 2em;
   margin: 0 auto;
   text-align: center;
@@ -394,7 +414,7 @@ button:active,
 button > a:active,
 .button--link:active {
   background-color: var(--hover);
-  color: var(--tertiary-bg-color);
+  color: var(--primary-bg-color);
   font-weight: 600;
 }
 
@@ -413,7 +433,7 @@ button > a:active,
     margin: 0 auto;
   }
   .project--list {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   nav {
     display: flex;
@@ -468,17 +488,17 @@ button > a:active,
     font-weight: 600;
     font-size: 1em;
   }
-
+  /* 
   .home--container {
     background-color: var(--primary-bg-color);
     display: flex;
     align-items: normal;
-  }
+  } */
   .home--hero {
     padding: 1em;
     background-color: #f2f7f5;
     height: max-content;
-    width: 90%;
+    /* width: 90%; */
   }
   .home--hero > p {
     font-size: 1.2em;
@@ -486,5 +506,10 @@ button > a:active,
 
   .home--hero > h1 {
     font-size: 2.3em;
+  }
+  .project--list--featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
   }
 }

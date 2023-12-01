@@ -88,7 +88,11 @@ export default function Projects(props) {
         hover and click to find out more{" "}
         <PiArrowBendRightDownBold className="arrow--icon" />
       </h3>
-      <div className="project--list">{projectElements}</div>
+      <div
+        className={props.featured ? "project--list--featured" : "project--list"}
+      >
+        {projectElements}
+      </div>
     </motion.div>
   ) : null;
 }

@@ -5,7 +5,7 @@ export default function NavBar() {
     fontWeight: "800",
     textDecoration: "underline",
 
-    color: "  #d37090",
+    color: " #d8c9de",
   };
   return (
     <nav className="navbar--container">

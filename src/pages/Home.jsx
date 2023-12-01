@@ -23,7 +23,7 @@ export default function Home() {
           <span className="text--uppercase">{`<Hello/>`}</span>
         </p>
         <h1>
-          I am <span>Agnes Kuti-Palasthy</span>
+          I am <span>Agnes.</span>
         </h1>
         <p>
           <span>Frontend developer</span>, designer, landscape architect and a

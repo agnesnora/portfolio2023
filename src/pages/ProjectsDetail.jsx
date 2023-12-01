@@ -42,14 +42,17 @@ export default function ProjectDetail() {
       transition={{ duration: 1 }}
     >
       <h2>{project.name}</h2>
-      <Link className="back--link" to="/projects">
-        <FaArrowLeft className="back--icon" />
-        Back to projects
-      </Link>
-      <Link className="back--link" to="/">
-        <FaArrowLeft className="back--icon" />
-        Back to Home
-      </Link>
+      <div className="go--back--btn">
+        {" "}
+        <Link className="back--link" to="/projects">
+          <FaArrowLeft className="back--icon" />
+          Go to projects
+        </Link>
+        <Link className="back--link" to="/">
+          <FaArrowLeft className="back--icon" />
+          Go to Home
+        </Link>
+      </div>
 
       <div className="project--detail">
         <img

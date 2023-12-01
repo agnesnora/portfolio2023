@@ -12,7 +12,7 @@ export default function Resume() {
         <div className="resume--about">
           <h1>
             Hello there!
-            <br />I am Agnes.👋
+            <br />I am Agnes.
             <br />
           </h1>
           <p>
