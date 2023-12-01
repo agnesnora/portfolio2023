@@ -46,11 +46,11 @@ export default function ProjectDetail() {
         {" "}
         <Link className="back--link" to="/projects">
           <FaArrowLeft className="back--icon" />
-          Go to projects
+          Projects
         </Link>
         <Link className="back--link" to="/">
           <FaArrowLeft className="back--icon" />
-          Go to Home
+          Home
         </Link>
       </div>
 
