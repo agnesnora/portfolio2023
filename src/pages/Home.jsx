@@ -40,7 +40,7 @@ export default function Home() {
       </div>
 
       {isContact ? <Contact /> : null}
-      <Projects className="somethingelse" featured={true} />
+      <Projects className="recent--projects" featured={true} />
     </motion.div>
   );
 }
