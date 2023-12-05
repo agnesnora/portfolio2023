@@ -356,7 +356,7 @@ h1 {
   font-family: "Inria Sans", sans-serif;
   font-size: 1em;
   font-weight: 500;
-  color: var(--tertiary-bg-color);
+  color: var(--primary-text-color);
 }
 
 .highlighted--text {
@@ -374,7 +374,7 @@ h1 {
 
 .project--list--container {
   background-color: var(--secondary-text-color);
-  padding: 2em;
+  padding: 1em;
   margin-top: 1em;
   /* border-radius: 18px; */
 }
@@ -494,6 +494,9 @@ button > a:active,
     font-weight: 600;
     font-size: 1em;
   }
+  .project--list--container {
+    margin: 1em;
+  }
   /* 
   .home--container {
     background-color: var(--primary-bg-color);
@@ -502,7 +505,7 @@ button > a:active,
   } */
   .home--hero {
     padding: 1em;
-    background-color: #f2f7f5;
+
     height: max-content;
     /* width: 90%; */
   }

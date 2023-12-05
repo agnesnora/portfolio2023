@@ -82,7 +82,7 @@ export default function Projects(props) {
       transition={{ duration: 2 }}
     >
       <h1 className={props.featured ? "featured" : ""}>
-        {props.featured ? "Some of my latest work" : "Explore my projects"}
+        {props.featured ? "Some of my recent work" : "Explore my projects"}
       </h1>
       <h3>
         hover and click to find out more{" "}
