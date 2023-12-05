@@ -215,7 +215,11 @@ a {
 }
 
 .project--detail--container li {
-  border-radius: 18px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+.project--detail--container li:first-child {
+  margin-left: 0;
 }
 h2 {
   font-weight: 400;
@@ -248,7 +252,7 @@ p {
 }
 
 .react {
-  background-color: #fcf196;
+  background-color: #f7cdbf;
 }
 
 .javascript {
@@ -262,12 +266,12 @@ p {
 }
 
 .css {
-  background-color: #475d5b;
-  color: var(--tertiary--text-color);
+  background-color: #5d70ab;
+  color: var(--primary-text-color);
 }
 .html5 {
   background-color: #8d80b3;
-  color: var(--primary-bg-color);
+  color: var(--primary-text-color);
 }
 .responsive {
   background-color: #e7f0ed;
