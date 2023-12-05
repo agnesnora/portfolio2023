@@ -147,9 +147,8 @@ a {
 }
 
 .button--link,
-.button {
-  background-color: var(--secondary-bg-color);
-  color: var(--primary-text-color);
+.button,
+.home--button--link {
   font-weight: 500;
   padding: 0.5em 0.8em;
   border: none;
@@ -158,6 +157,21 @@ a {
   font-size: 1em;
   transition: 0.3s;
   margin-right: 0.5em;
+}
+.button--link,
+.button {
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.home--button--link {
+  background-color: var(--hover);
+  color: var(--primary-bg-color);
+}
+
+.home--button--link:hover {
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
 }
 
 .linkbutton {
@@ -176,7 +190,8 @@ a {
   border: none;
 }
 
-.button--link {
+.button--link,
+.home--button--link {
   margin-right: 1em;
 }
 .button--link > a {

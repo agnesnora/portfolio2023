@@ -30,10 +30,10 @@ export default function Home() {
           passionate gardener located in Hungary.
         </p>
         <div className="home--link">
-          <Link className="button--link" to="/about">
+          <Link className="home--button--link" to="/about">
             About me
           </Link>
-          <Link onClick={setContactInfo} className="button--link">
+          <Link onClick={setContactInfo} className="home--button--link">
             {!isContact ? "Contact" : "Hide contact"}
           </Link>
         </div>
