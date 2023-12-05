@@ -127,7 +127,7 @@ li {
 a {
   text-decoration: none;
   font-family: "Inria Sans", sans-serif;
-  color: var(--primary-text-color);
+  /* color: var(--primary-bg-color); */
   /* margin: 0 auto; */
   padding: 0;
   display: inline-block;
@@ -143,6 +143,7 @@ a {
   font-size: 0.9em;
   font-family: "Nunito", sans-serif;
   margin-right: 0.8em;
+  color: var(--primary-text-color);
 }
 
 .button--link,
@@ -159,15 +160,32 @@ a {
   margin-right: 0.5em;
 }
 
+.linkbutton {
+  padding: 0.5em 0.8em;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 2px solid var(--secondary-bg-color);
+  color: var(--secondary-text-color);
+  margin-right: 0.5em;
+}
+
+.linkbutton a {
+  font-size: 1rem;
+}
+.linkbutton:hover {
+  border: none;
+}
+
 .button--link {
   margin-right: 1em;
 }
 .button--link > a {
   margin-right: 0;
   margin-top: 0;
-  padding: 0.5em 0.8em;
+  /* padding: 0.5em 0.8em; */
   font-weight: 500;
   color: var(--primary-text-color);
+  font-size: 1rem;
 }
 
 .back--link {

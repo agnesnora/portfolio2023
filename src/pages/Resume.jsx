@@ -120,7 +120,7 @@ export default function Resume() {
           Explore projects
         </NavLink>
 
-        <button className="button">
+        <button className="button--link">
           {" "}
           <a
             href="/images/AgnesKutiPalasthyCV.pdf"

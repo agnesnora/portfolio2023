@@ -75,12 +75,12 @@ export default function ProjectDetail() {
       </div>
 
       <div>
-        <button className="button">
+        <button className="linkbutton">
           <a href={project.live} target="_blank" rel="noopener noreferrer">
             Live App
           </a>
         </button>
-        <button className="button">
+        <button className="linkbutton">
           <a href={project.code} target="_blank" rel="noopener noreferrer">
             Source code
           </a>
