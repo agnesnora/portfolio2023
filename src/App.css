@@ -501,7 +501,7 @@ button > a:active,
     display: flex;
     align-items: center;
   }
-  .resume--footer > .button {
+  .resume--footer > button {
     margin-top: 0;
   }
   .project--detail {

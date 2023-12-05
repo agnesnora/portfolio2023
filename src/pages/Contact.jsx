@@ -21,11 +21,18 @@ export default function Contact() {
           <a
             className="social--icons"
             href="https://www.linkedin.com/in/agnes-nora-palasthy-b41ba378/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {" "}
             <FaLinkedin />
           </a>
-          <a className="social--icons" href="https://github.com/agnesnora">
+          <a
+            className="social--icons"
+            href="https://github.com/agnesnora"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {" "}
             <FaGithub />
           </a>
