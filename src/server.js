@@ -38,22 +38,11 @@ createServer({
       description:
         "Tindog is a dating app for dogs, which was a solo project of Scrimba Career Path. The main feature was to pop up a like/nope badge on the dog's image after clicking on the like or dislike buttons. I expanded it with a chat feature, and the users can also save the liked dogs in their profile.",
 
-      type: ["React", "Responsive", "HTML5"],
+      type: ["React", "Responsive", "CSS"],
     });
 
     server.create("project", {
       id: "4",
-      name: "Learning journal",
-
-      description:
-        " The Learning Journal was a solo project as part of the Responsive Design Module of the Scrimba Career Path. Each page was built from scratch and made responsive. Built with HTML and CSS, using media queries, mobile-first design, relative units, etc. Design from the given Figma file.",
-      imageUrl: "images/Journal.png",
-      type: ["Responsive", "CSS", "HTML5"],
-      live: "https://agnesnora.github.io/learning-journal/",
-      code: "https://github.com/agnesnora/learning-journal",
-    });
-    server.create("project", {
-      id: "5",
       name: "Color Scheme Generator",
 
       description:
@@ -65,7 +54,7 @@ createServer({
     });
 
     server.create("project", {
-      id: "6",
+      id: "5",
       name: "Component library",
       imageUrl: "images/Component.png",
       description:
@@ -74,6 +63,17 @@ createServer({
       live: "https://clever-kitten-80ba4d.netlify.app/",
       code: "https://github.com/agnesnora/componentLibrary",
     });
+    // server.create("project", {
+    //   id: "6",
+    //   name: "Learning journal",
+
+    //   description:
+    //     " The Learning Journal was a solo project as part of the Responsive Design Module of the Scrimba Career Path. Each page was built from scratch and made responsive. Built with HTML and CSS, using media queries, mobile-first design, relative units, etc. Design from the given Figma file.",
+    //   imageUrl: "images/Journal.png",
+    //   type: ["Responsive", "CSS", "HTML5"],
+    //   live: "https://agnesnora.github.io/learning-journal/",
+    //   code: "https://github.com/agnesnora/learning-journal",
+    // });
   },
 
   routes() {
