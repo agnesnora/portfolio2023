@@ -82,11 +82,10 @@ li {
   padding: 0.5em 1em;
 }
 .contact {
-  background-color: var(--secondary-text-color);
-  width: 80vw;
-  margin: 3em auto;
+  background-color: var(--tertiary-bg-color);
+
+  margin-bottom: 2em;
   padding: 1em;
-  border-radius: 18px;
 }
 .contact--data {
   display: flex;
@@ -102,13 +101,16 @@ li {
 
 .social--icons {
   display: inline-block;
-  margin-left: 1em;
+  /* margin-left: 1em; */
   color: var(--primary-bg-color);
   /* font-size: 1.2em; */
 }
+.social--icons:last-child {
+  margin-left: 1em;
+}
 .social {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 .social > a {
   font-size: 1.5em;
