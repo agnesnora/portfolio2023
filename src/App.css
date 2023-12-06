@@ -559,7 +559,7 @@ button > a:active,
   .project--list--featured {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+    gap: 1.5em;
   }
   .home--container {
     display: grid;
@@ -569,5 +569,6 @@ button > a:active,
   .project--list--container {
     grid-column: span 3;
     margin: 1em;
+    padding: 1em 2em;
   }
 }
