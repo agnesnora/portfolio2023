@@ -63,17 +63,17 @@ createServer({
       live: "https://clever-kitten-80ba4d.netlify.app/",
       code: "https://github.com/agnesnora/componentLibrary",
     });
-    // server.create("project", {
-    //   id: "6",
-    //   name: "Learning journal",
+    server.create("project", {
+      id: "6",
+      name: "Data Analytics",
 
-    //   description:
-    //     " The Learning Journal was a solo project as part of the Responsive Design Module of the Scrimba Career Path. Each page was built from scratch and made responsive. Built with HTML and CSS, using media queries, mobile-first design, relative units, etc. Design from the given Figma file.",
-    //   imageUrl: "images/Journal.png",
-    //   type: ["Responsive", "CSS", "HTML5"],
-    //   live: "https://agnesnora.github.io/learning-journal/",
-    //   code: "https://github.com/agnesnora/learning-journal",
-    // });
+      description:
+        "In this recent project, I embarked on a hands-on journey to sharpen my coding skills by translating a Figma design into a functional web application. The primary goal of this exercise was to enhance my proficiency in CSS and polish my responsive design techniques.",
+      imageUrl: "images/Data.png",
+      type: ["Responsive", "CSS", "React"],
+      live: "https://dataanalyticsagnesnora.netlify.app/",
+      code: "https://github.com/agnesnora/Data-Analitics",
+    });
   },
 
   routes() {
