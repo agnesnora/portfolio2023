@@ -251,6 +251,7 @@ a {
   padding: 1.2em;
   background-color: var(--primary-text-color);
   color: var(--primary-bg-color);
+  height: 100%;
 }
 
 .project--detail--container li {
