@@ -1,5 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
-
+import { FaGithub } from "react-icons/fa";
 export default function Resume() {
   return (
     <div className="resume--container">
@@ -21,6 +21,15 @@ export default function Resume() {
             furniture, design and sales. Strong communication and
             problem-solving skills.{" "}
           </p>
+          <button className="big--github ">
+            <a
+              href="https://github.com/agnesnora"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="big--github" />
+            </a>
+          </button>
         </div>
       </div>
       <main className="resume--main--container">

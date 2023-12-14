@@ -30,7 +30,7 @@ body {
   background-color: var(--primary-bg-color);
   font-family: "Poppins", sans-serif;
   color: var(--primary-text-color);
-  max-width: 2000px;
+  /* max-width: 2000px; */
   height: 100vh;
 }
 
@@ -49,9 +49,9 @@ footer {
   text-align: center;
   color: var(--primary-bg-color);
   font-size: 0.8em;
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
 }
 .resume--container,
@@ -141,6 +141,7 @@ a {
   /* width: 100px; */
   font-size: 0.8rem;
   font-weight: 400;
+  color: var(--primary-bg-color);
 }
 
 .navbar--container > a {
@@ -182,9 +183,12 @@ a {
 
 .linkbutton {
   padding: 0.5em 0.8em;
-  background-color: transparent;
+  background-color: var(--hover);
+  background-color: var(--tertiary-bg-color);
+  color: var(--primary-bg-color);
   border-radius: 8px;
-  border: 2px solid var(--secondary-bg-color);
+  /* border: 2px solid var(--secondary-bg-color); */
+  border: none;
   color: var(--secondary-text-color);
   margin-right: 0.5em;
 }
@@ -398,7 +402,7 @@ h1 {
 
 .project--list--container > h3 {
   font-family: "Inria Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 500;
   color: var(--primary-text-color);
 }
@@ -457,8 +461,8 @@ h1 {
   margin-top: 1em;
 }
 
-button:hover,
-button > a:hover,
+/* button:hover,
+button > a:hover, */
 .button--link:hover,
 button:active,
 button > a:active,
@@ -475,15 +479,148 @@ button > a:active,
 .project--detail--type > li {
   margin: 0.2em;
 }
+.link--icon {
+  align-self: center;
+}
+.detailed--header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.detailed--header--link {
+  display: flex;
+}
+
+.detailed--header > h2 {
+  margin-top: 0;
+}
+.big--github {
+  font-size: 1.8em;
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  border: none;
+  padding: 0.1em;
+  background-color: transparent;
+}
+a .big--github:hover,
+button .big--github:hover {
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+}
 
 /*********** @ M E D I A  **************/
-@media (min-width: 570px) {
+@media (min-width: 760px) {
   html,
   body {
     margin: 0 auto;
   }
   .project--list {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: right;
+  }
+  .project--list--container > h3 {
+    font-size: 1.2em;
+  }
+  .project--detail--info > p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  .resume--header,
+  .resume--main--container {
+    display: flex;
+    text-align: left;
+    align-items: center;
+  }
+
+  .resume--footer {
+    display: flex;
+    align-items: center;
+  }
+  .resume--footer > button {
+    margin-top: 0;
+  }
+  .project--detail {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    align-items: start;
+    margin-bottom: 2em;
+  }
+
+  .project--detail--info {
+    margin: 0 0 0 1.5em;
+    font-size: 0.8em;
+  }
+
+  .project--detail--info > p {
+    padding-top: 0;
+  }
+
+  .project--detail--img {
+    max-width: 70%;
+  }
+
+  .contact {
+    max-width: 100%;
+
+    align-self: center;
+    margin-bottom: 1em;
+    margin-right: 1em;
+  }
+  .navbar--container > a {
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  /* 
+  .home--container {
+    background-color: var(--primary-bg-color);
+    display: flex;
+    align-items: normal;
+  } */
+  .home--hero {
+    padding: 1em;
+    grid-column: span 2;
+    height: max-content;
+    /* width: 90%; */
+  }
+  .home--hero > p {
+    font-size: 1.2em;
+  }
+
+  .home--hero > h1 {
+    font-size: 2.3em;
+  }
+  .project--list--featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+  .home--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Two columns for wide screens */
+    grid-gap: 20px;
+  }
+  .project--list--container {
+    grid-column: span 3;
+    /* margin: 1em;
+    padding: 1em 2em; */
+  }
+}
+
+@media (min-width: 1200px) {
+  html,
+  body {
+    margin: 0 auto;
+  }
+  .project--list {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
   nav {
     display: flex;
@@ -573,7 +710,7 @@ button > a:active,
   }
   .project--list--container {
     grid-column: span 3;
-    margin: 1em;
+    /* margin: 1em; */
     padding: 1em 2em;
   }
 }

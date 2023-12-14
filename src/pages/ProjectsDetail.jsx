@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
 import { motion } from "framer-motion";
 export default function ProjectDetail() {
   const params = useParams();
@@ -41,7 +42,22 @@ export default function ProjectDetail() {
       // exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <h2>{project.name}</h2>
+      <div className="detailed--header">
+        <h2>{project.name}</h2>
+        <div className="detailed--header--link">
+          <button className="linkbutton">
+            <a href={project.live} target="_blank" rel="noopener noreferrer">
+              <FaExternalLinkAlt className="link--icon" />
+            </a>
+          </button>
+          <button className="linkbutton">
+            <a href={project.code} target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+          </button>
+        </div>
+      </div>
+
       <div className="go--back--btn">
         {" "}
         <Link className="back--link" to="/projects">
@@ -72,19 +88,6 @@ export default function ProjectDetail() {
               : null}
           </ul>
         </div>
-      </div>
-
-      <div>
-        <button className="linkbutton">
-          <a href={project.live} target="_blank" rel="noopener noreferrer">
-            Live App
-          </a>
-        </button>
-        <button className="linkbutton">
-          <a href={project.code} target="_blank" rel="noopener noreferrer">
-            Source code
-          </a>
-        </button>
       </div>
     </motion.div>
   ) : null;
