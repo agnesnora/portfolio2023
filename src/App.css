@@ -504,9 +504,16 @@ button > a:active,
 }
 a .big--github:hover,
 button .big--github:hover {
-  background-color: var(--secondary-bg-color);
-  color: var(--primary-text-color);
+  /* background-color: var(--secondary-bg-color); */
+  color: var(--secondary-bg-color);
   font-size: rem;
+}
+
+.social a:hover {
+  color: #5d70ab;
+}
+.linkbutton a:hover {
+  color: var(--primary-text-color);
 }
 
 /*********** @ M E D I A  **************/
@@ -524,6 +531,10 @@ button .big--github:hover {
     flex-direction: row;
 
     justify-content: right;
+  }
+  footer > p,
+  .contact--data > p {
+    font-size: 0.9rem;
   }
   .resume--about > h1 {
     font-size: 1.8rem;
@@ -631,7 +642,7 @@ button .big--github:hover {
     margin: 0 auto;
   }
   .project--list {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
   nav {
     display: flex;
