@@ -10,11 +10,7 @@ export default function Resume() {
           alt="profile picture"
         />
         <div className="resume--about">
-          <h1>
-            Hello there!
-            <br />I am Agnes.
-            <br />
-          </h1>
+          <h1>Hello there! I am Agnes.</h1>
           <p>
             <span className="highlighted--text">Frontend developer</span> with
             an eye for details and in love with CSS. With a background in office

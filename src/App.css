@@ -495,7 +495,7 @@ button > a:active,
   margin-top: 0;
 }
 .big--github {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   margin-top: 0.2em;
   margin-bottom: 0;
   border: none;
@@ -506,6 +506,7 @@ a .big--github:hover,
 button .big--github:hover {
   background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);
+  font-size: rem;
 }
 
 /*********** @ M E D I A  **************/
@@ -524,6 +525,13 @@ button .big--github:hover {
 
     justify-content: right;
   }
+  .resume--about > h1 {
+    font-size: 1.8rem;
+  }
+  .profile--picture {
+    width: 15em;
+    height: 15em;
+  }
   .project--list--container > h3 {
     font-size: 1.2em;
   }
@@ -536,6 +544,9 @@ button .big--github:hover {
     display: flex;
     text-align: left;
     align-items: center;
+  }
+  p {
+    font-size: 1.1rem;
   }
 
   .resume--footer {
