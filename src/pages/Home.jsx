@@ -29,6 +29,7 @@ export default function Home() {
           <span>Frontend developer</span>, designer, landscape architect and a
           passionate gardener located in Hungary.
         </p>
+
         <div className="home--link">
           <Link className="home--button--link" to="/about">
             About me

@@ -183,14 +183,23 @@ a {
 
 .linkbutton {
   padding: 0.5em 0.8em;
-  background-color: var(--hover);
-  background-color: var(--tertiary-bg-color);
+  /* background-color: var(--hover);
+  background-color: var(--tertiary-bg-color); */
+  background-color: transparent;
+  /* background-color: var(--highlighted-text-color); */
   color: var(--primary-bg-color);
   border-radius: 8px;
   /* border: 2px solid var(--secondary-bg-color); */
   border: none;
   color: var(--secondary-text-color);
   margin-right: 0.5em;
+}
+.background--link {
+  background-color: var(--highlighted-text-color);
+}
+.background--link:hover .background--link a:hover {
+  background-color: #e8eb50;
+  animation: fadeIn 0.7s ease-in-out;
 }
 
 .linkbutton a {
@@ -255,7 +264,7 @@ a {
   padding: 1.2em;
   background-color: var(--primary-text-color);
   color: var(--primary-bg-color);
-  height: 100%;
+  height: 90vh;
 }
 
 .project--detail--container li {
@@ -481,6 +490,7 @@ button > a:active,
 }
 .link--icon {
   align-self: center;
+  font-size: 1.5rem;
 }
 .detailed--header {
   display: flex;
@@ -489,6 +499,8 @@ button > a:active,
 }
 .detailed--header--link {
   display: flex;
+  justify-content: end;
+  width: 5%;
 }
 
 .detailed--header > h2 {
@@ -512,8 +524,9 @@ button .big--github:hover {
 .social a:hover {
   color: #5d70ab;
 }
-.linkbutton a:hover {
-  color: var(--primary-text-color);
+.linkbutton a:hover,
+.linkbutton button:hover {
+  color: var(--secondary-text-color);
 }
 
 /*********** @ M E D I A  **************/
@@ -626,13 +639,26 @@ button .big--github:hover {
   }
   .home--container {
     display: grid;
+    background-color: var(--primary-bg-color);
     grid-template-columns: 1fr 1fr 1fr; /* Two columns for wide screens */
     grid-gap: 20px;
+    /* background-image: url("/images/floral.png");
+    background-repeat: none;
+    background-size: cover; */
+
+    background-blend-mode: soft-light;
   }
   .project--list--container {
     grid-column: span 3;
     /* margin: 1em;
     padding: 1em 2em; */
+  }
+  .link--icon {
+    font-size: 1.8rem;
+    color: var(--secondary-bg-color);
+  }
+  .detailed--header--link {
+    width: 60vh;
   }
 }
 
@@ -647,6 +673,8 @@ button .big--github:hover {
   nav {
     display: flex;
     flex-direction: row;
+    height: 5vh;
+    align-items: center;
 
     justify-content: right;
   }
@@ -727,7 +755,7 @@ button .big--github:hover {
   }
   .home--container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Two columns for wide screens */
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
   .project--list--container {
@@ -735,4 +763,17 @@ button .big--github:hover {
     /* margin: 1em; */
     padding: 1em 2em;
   }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade--in {
+  animation: fadeIn 0.8s ease-in-out;
 }
