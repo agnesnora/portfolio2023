@@ -271,7 +271,7 @@ a {
   padding: 1.2em;
   background-color: var(--primary-text-color);
   color: var(--primary-bg-color);
-  /* height: 90vh; */
+  height: 90vh;
 }
 
 .project--detail--container li {
@@ -286,7 +286,7 @@ h2 {
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .project--detail--img {
@@ -520,13 +520,11 @@ button > a:active,
   border: none;
   /* padding: 0.1em; */
   background-color: transparent;
-  vertical-align: middle;
 }
 
 .big--github a {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 /* a .big--github:hover,
 button .big--github:hover {
@@ -534,8 +532,7 @@ button .big--github:hover {
   color: var(--secondary-bg-color);
   font-size: rem;
 } */
-.resume--about > button {
-}
+
 .big--github > a > p {
   padding-right: 0.5rem;
 }
@@ -562,6 +559,11 @@ button .big--github:hover {
   padding: 0 1rem;
   color: var(--secondary-text-color);
 } */
+
+.background--link:hover {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bg-color);
+}
 
 /*********** @ M E D I A  **************/
 @media (min-width: 760px) {
@@ -693,6 +695,9 @@ button .big--github:hover {
   }
   .detailed--header--link {
     width: 60vh;
+  }
+  .project--detail--container {
+    height: unset;
   }
 }
 

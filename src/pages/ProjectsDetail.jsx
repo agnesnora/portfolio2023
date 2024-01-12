@@ -89,7 +89,7 @@ export default function ProjectDetail() {
         </div> */}
         {windowWidth > 760 ? (
           <div className="detailed--header--link">
-            <button className="linkbutton background--link">
+            {/* <button className="linkbutton background--link">
               <a
                 href={project.live}
                 className="link--icon background--link"
@@ -108,7 +108,25 @@ export default function ProjectDetail() {
               >
                 Source Code
               </a>
-            </button>
+            </button> */}
+
+            <a
+              href={project.live}
+              className=" linkbutton background--link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live App
+            </a>
+
+            <a
+              href={project.code}
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" linkbutton background--link"
+            >
+              Source Code
+            </a>
           </div>
         ) : (
           <div className="detailed--header--link">
