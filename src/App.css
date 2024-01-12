@@ -442,7 +442,7 @@ h1 {
   background-color: var(--secondary-text-color);
   padding: 1em;
   margin-top: 1em;
-  height: 90vh;
+  /* height: 90vh; */
   /* border-radius: 18px; */
 }
 
@@ -809,7 +809,7 @@ button .big--github:hover {
     grid-column: span 3;
     /* margin: 1em; */
     padding: 1em 2em;
-    height: 87vh;
+    height: 100%;
   }
 }
 
