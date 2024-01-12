@@ -25,7 +25,7 @@ export default function Contact() {
             rel="noopener noreferrer"
           >
             {" "}
-            <FaLinkedin />
+            <FaLinkedin className="social--hover" />
           </a>
           <a
             className="social--icons"
@@ -34,7 +34,7 @@ export default function Contact() {
             rel="noopener noreferrer"
           >
             {" "}
-            <FaGithub />
+            <FaGithub className="social--hover" />
           </a>
         </div>
       </div>

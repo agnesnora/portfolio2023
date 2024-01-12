@@ -109,6 +109,7 @@ li {
   color: var(--primary-bg-color);
   /* font-size: 1.2em; */
 }
+
 .social--icons:last-child {
   margin-left: 1em;
 }
@@ -119,8 +120,9 @@ li {
 .social > a {
   font-size: 1.5em;
 }
-.social > a:hover {
-  color: var(--tertiary-bg-color);
+
+.social--hover:hover {
+  color: var(--primary-text-color);
 }
 
 .profile--picture {
@@ -440,6 +442,7 @@ h1 {
   background-color: var(--secondary-text-color);
   padding: 1em;
   margin-top: 1em;
+  height: 90vh;
   /* border-radius: 18px; */
 }
 
@@ -485,7 +488,6 @@ button > a:active,
 .button--link:active {
   background-color: var(--hover);
   color: var(--primary-bg-color);
-  font-weight: 600;
 }
 
 .techstack--list > li {
@@ -564,7 +566,9 @@ button .big--github:hover {
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
 }
-
+.navbar--container > a:hover {
+  color: var(--highlighted-text-color);
+}
 /*********** @ M E D I A  **************/
 @media (min-width: 760px) {
   html,
@@ -678,6 +682,8 @@ button .big--github:hover {
     background-color: var(--primary-bg-color);
     grid-template-columns: 1fr 1fr 1fr; /* Two columns for wide screens */
     grid-gap: 20px;
+    height: 90vh;
+    margin-bottom: 6rem;
     /* background-image: url("/images/floral.png");
     background-repeat: none;
     background-size: cover; */
@@ -686,6 +692,7 @@ button .big--github:hover {
   }
   .project--list--container {
     grid-column: span 3;
+    height: unset;
     /* margin: 1em;
     padding: 1em 2em; */
   }
@@ -697,7 +704,7 @@ button .big--github:hover {
     width: 60vh;
   }
   .project--detail--container {
-    height: unset;
+    height: 90vh;
   }
 }
 
@@ -754,6 +761,7 @@ button .big--github:hover {
 
   .project--detail--img {
     max-width: 70%;
+    max-height: 75vh;
   }
 
   .contact {
@@ -801,6 +809,7 @@ button .big--github:hover {
     grid-column: span 3;
     /* margin: 1em; */
     padding: 1em 2em;
+    height: 87vh;
   }
 }
 
