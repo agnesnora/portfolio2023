@@ -518,7 +518,7 @@ button > a:active,
 
   margin-bottom: 0;
   border: none;
-  padding: 0.1em;
+  /* padding: 0.1em; */
   background-color: transparent;
   vertical-align: middle;
 }
@@ -526,6 +526,7 @@ button > a:active,
 .big--github a {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 /* a .big--github:hover,
 button .big--github:hover {
@@ -534,11 +535,19 @@ button .big--github:hover {
   font-size: rem;
 } */
 .resume--about > button {
-  padding: 0 1rem;
+}
+.big--github > a > p {
+  padding-right: 0.5rem;
+}
+.big--github--icon {
+  font-size: 1.2rem;
 }
 .resume--about > button:hover {
-  background-color: magenta;
   border-radius: 8px;
+  padding: 0 1rem;
+  color: var(--highlighted-text-color);
+  background-color: var(--hover);
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .social a:hover {

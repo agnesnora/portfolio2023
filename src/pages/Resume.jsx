@@ -23,7 +23,7 @@ export default function Resume() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p>Visit my GitHub</p> <FaGithub className="big--github--icon" />
+              <p>Visit my GitHub</p> <FaGithub className="big--github--icon " />
             </a>
           </button>
         </div>
