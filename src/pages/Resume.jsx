@@ -23,7 +23,7 @@ export default function Resume() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="big--github" />
+              <p>Visit my GitHub</p> <FaGithub className="big--github--icon" />
             </a>
           </button>
         </div>
@@ -125,16 +125,14 @@ export default function Resume() {
           Explore projects
         </NavLink>
 
-        <button className="button--link">
-          {" "}
-          <a
-            href="/images/AgnesKutiPalasthyCV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download CV
-          </a>
-        </button>
+        <a
+          className="button--link"
+          href="/images/AgnesKutiPalasthyCV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download CV
+        </a>
       </div>
     </div>
   );

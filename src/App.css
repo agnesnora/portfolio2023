@@ -251,6 +251,13 @@ a {
   flex-direction: column;
   justify-content: left;
 }
+.button--link > a:hover {
+  color: var(--primary-bg-color);
+  font-weight: 600;
+}
+/* .resume--footer > button:hover {
+  color: red;
+} */
 /*********** P R O J E C T S  **************/
 
 .project--list {
@@ -264,7 +271,7 @@ a {
   padding: 1.2em;
   background-color: var(--primary-text-color);
   color: var(--primary-bg-color);
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 .project--detail--container li {
@@ -508,17 +515,30 @@ button > a:active,
 }
 .big--github {
   font-size: 1.8rem;
-  margin-top: 0.2em;
+
   margin-bottom: 0;
   border: none;
   padding: 0.1em;
   background-color: transparent;
+  vertical-align: middle;
 }
-a .big--github:hover,
+
+.big--github a {
+  display: flex;
+  align-items: center;
+}
+/* a .big--github:hover,
 button .big--github:hover {
-  /* background-color: var(--secondary-bg-color); */
+
   color: var(--secondary-bg-color);
   font-size: rem;
+} */
+.resume--about > button {
+  padding: 0 1rem;
+}
+.resume--about > button:hover {
+  background-color: magenta;
+  border-radius: 8px;
 }
 
 .social a:hover {
@@ -528,6 +548,11 @@ button .big--github:hover {
 .linkbutton button:hover {
   color: var(--secondary-text-color);
 }
+/* .big--github--icon {
+  font-size: 1.8rem;
+  padding: 0 1rem;
+  color: var(--secondary-text-color);
+} */
 
 /*********** @ M E D I A  **************/
 @media (min-width: 760px) {
