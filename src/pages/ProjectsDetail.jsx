@@ -52,7 +52,9 @@ export default function ProjectDetail() {
   if (loading) {
     return <h1>Loading...</h1>;
   }
-
+  const handleClickImage = () => {
+    window.open(project.live, "_blank");
+  };
   return project ? (
     <motion.div
       className="project--detail--container"
@@ -63,53 +65,9 @@ export default function ProjectDetail() {
     >
       <div className="detailed--header">
         <h2>{project.name}</h2>
-        {/* <div className="detailed--header--link">
-          <button className="linkbutton">
-            <a
-              href={project.live}
-              className="link--icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaExternalLinkSquareAlt className="link--icon" />
-            </a>
-           
-          </button>
-          <button className="linkbutton">
-           
-            <a
-              href={project.code}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link--icon"
-            >
-              <FaGithub className="link--icon" />
-            </a>
-          </button>
-        </div> */}
+
         {windowWidth > 760 ? (
           <div className="detailed--header--link">
-            {/* <button className="linkbutton background--link">
-              <a
-                href={project.live}
-                className="link--icon background--link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live App
-              </a>
-            </button>
-            <button className="linkbutton background--link ">
-              <a
-                href={project.code}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link--icon "
-              >
-                Source Code
-              </a>
-            </button> */}
-
             <a
               href={project.live}
               className=" linkbutton background--link"
@@ -171,7 +129,9 @@ export default function ProjectDetail() {
           className="project--detail--img"
           alt={`snapshot of ${project.name} project`}
           src={`/${project.imageUrl}`}
+          onClick={handleClickImage}
         />
+
         <div className="project--detail--info">
           <p>{project.description}</p>
           <ul className="project--detail--type">
