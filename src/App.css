@@ -294,6 +294,7 @@ p {
 
 .project--detail--img {
   max-width: 100%;
+  cursor: pointer;
 }
 .project--list--container > h1 {
   font-weight: 500;
