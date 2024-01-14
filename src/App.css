@@ -238,9 +238,9 @@ a {
 }
 
 .back--link:hover {
-  background-color: var(--hover);
-  color: var(--secondary-text-color);
-  border-radius: 18px;
+  /* background-color: var(--hover); */
+  background-color: var(--highlighted-text-color);
+  border-radius: 8px;
   padding: 0.3em 0.8em;
 }
 
@@ -273,7 +273,8 @@ a {
   padding: 1.2em;
   background-color: var(--primary-text-color);
   color: var(--primary-bg-color);
-  height: 90vh;
+  /* height: 95vh; */
+  height: 100%;
 }
 
 .project--detail--container li {
