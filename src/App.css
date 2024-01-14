@@ -317,7 +317,9 @@ p {
 .react {
   background-color: #f7cdbf;
 }
-
+.fixed-width {
+  background-color: #f8edfc;
+}
 .javascript {
   background-color: darkgray;
   color: var(--primary-text-color);
