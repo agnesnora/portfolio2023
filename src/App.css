@@ -763,6 +763,14 @@ button .big--github:hover {
   body {
     margin: 0 auto;
   }
+  .project--detail--container {
+    max-width: 80vw;
+  }
+  footer {
+    padding: 1em 0;
+    width: 80vw;
+    margin: 0 auto;
+  }
   .project--list {
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
@@ -771,7 +779,8 @@ button .big--github:hover {
     flex-direction: row;
     height: 5vh;
     align-items: center;
-    width: 90vw;
+    /* width: 90vw; */
+    width: 80vw;
     margin: 1em auto;
 
     justify-content: right;
@@ -857,6 +866,7 @@ button .big--github:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    max-width: 80vw;
   }
   .project--list--container {
     grid-column: span 3;
@@ -868,7 +878,7 @@ button .big--github:hover {
     margin: 0 auto 2em;
   }
   .wide--list {
-    max-width: 90vw;
+    max-width: 80vw;
     margin: 0 auto 2em;
   }
   /* .recent--project {
@@ -880,7 +890,7 @@ button .big--github:hover {
   }
   .resume--container,
   .home--container {
-    max-width: 90vw;
+    max-width: 80vw;
     margin: 0 auto 2rem;
   }
 }
