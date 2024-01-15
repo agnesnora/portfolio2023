@@ -690,7 +690,7 @@ button .big--github:hover {
     background-color: var(--primary-bg-color);
     grid-template-columns: 1fr 1fr 1fr; /* Two columns for wide screens */
     grid-gap: 20px;
-    height: 90vh;
+    /* height: 90vh; */
     margin-bottom: 6rem;
     /* background-image: url("/images/floral.png");
     background-repeat: none;
