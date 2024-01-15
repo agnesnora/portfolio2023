@@ -40,7 +40,7 @@ export default function Projects(props) {
     setHoveredProject({});
   }
   if (loading) {
-    return <h1>Loading...</h1>;
+    return <h1 className="loading">Loading...</h1>;
   }
   const projectElements = (
     props.featured ? projects.slice(1, 4) : projects

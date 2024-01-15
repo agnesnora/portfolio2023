@@ -50,7 +50,7 @@ export default function ProjectDetail() {
   }, [params.id]);
 
   if (loading) {
-    return <h1>Loading...</h1>;
+    return <h1 className="loading">Loading...</h1>;
   }
   const handleClickImage = () => {
     window.open(project.live, "_blank");

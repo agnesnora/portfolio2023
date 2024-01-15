@@ -55,8 +55,8 @@ footer {
   /* position: fixed;
   bottom: 0;
   left: 0; */
-  width: 90vw;
-  margin: 0 auto;
+  /* width: 90vw; */
+  margin: 0 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,6 +94,9 @@ ul {
 li {
   display: inline-block;
   padding: 0.5em 1em;
+}
+.loading {
+  text-align: center;
 }
 .contact {
   background-color: var(--tertiary-bg-color);
@@ -285,6 +288,7 @@ a {
   color: var(--primary-bg-color);
   /* height: 95vh; */
   height: 100%;
+  margin-bottom: 2em;
 }
 
 .project--detail--container li {
@@ -458,7 +462,7 @@ h1 {
 .project--list--container {
   background-color: var(--secondary-text-color);
   padding: 1em;
-  margin-top: 1em;
+  margin: 1em;
   /* height: 90vh; */
   /* border-radius: 18px; */
 }
@@ -496,7 +500,9 @@ h1 {
   display: block;
   margin-top: 1em;
 }
-
+.home--container > .project--list--container {
+  margin: 0;
+}
 /* button:hover,
 button > a:hover, */
 .button--link:hover,
@@ -732,6 +738,8 @@ button .big--github:hover {
   }
   .project--detail--container {
     max-height: 90vh;
+    max-width: 90vw;
+    margin: 0 auto 2em;
   }
   .wide--list {
     max-width: 90vw;
@@ -742,6 +750,11 @@ button .big--github:hover {
     max-width: 90vw;
     margin: 0 auto 2rem;
     padding: 0;
+  }
+  footer {
+    padding: 1em 0;
+    width: 90vw;
+    margin: 0 auto;
   }
 }
 
