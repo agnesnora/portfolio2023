@@ -44,15 +44,25 @@ li {
 }
 
 footer {
-  background-color: var(--highlighted-text-color);
-  padding: 1em;
-  text-align: center;
-  color: var(--primary-bg-color);
+  /* background-color: var(--highlighted-text-color); */
+  padding: 1em 0;
+  text-align: left;
+
+  /* color: var(--primary-bg-color); */
+  color: var(--tertiary-bg-color);
+  border-top: var(--tertiary-bg-color) 1px solid;
   font-size: 0.8em;
   /* position: fixed;
   bottom: 0;
   left: 0; */
-  width: 100%;
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer > .social--icons {
+  color: var(--tertiary-bg-color);
 }
 .resume--container,
 .home--container {
@@ -536,6 +546,9 @@ button > a:active,
   display: flex;
   align-items: center;
 }
+footer > a {
+  color: var(--tertiary-bg-color);
+}
 /* a .big--github:hover,
 button .big--github:hover {
 
@@ -592,6 +605,8 @@ button .big--github:hover {
     flex-direction: row;
 
     justify-content: right;
+    width: 90vw;
+    margin: 1em auto;
   }
   footer > p,
   .contact--data > p {
@@ -668,9 +683,10 @@ button .big--github:hover {
     align-items: normal;
   } */
   .home--hero {
-    padding: 1em;
+    /* padding: 1em; */
     grid-column: span 2;
     height: max-content;
+    /* margin-left: 0.8em; */
     /* width: 90%; */
   }
   .home--hero > p {
@@ -692,6 +708,7 @@ button .big--github:hover {
     grid-gap: 20px;
     /* height: 90vh; */
     margin-bottom: 6rem;
+
     /* background-image: url("/images/floral.png");
     background-repeat: none;
     background-size: cover; */
@@ -701,6 +718,7 @@ button .big--github:hover {
   .project--list--container {
     grid-column: span 3;
     height: unset;
+    margin: 0 auto 2em;
     /* margin: 1em;
     padding: 1em 2em; */
   }
@@ -713,7 +731,17 @@ button .big--github:hover {
     flex-direction: row;
   }
   .project--detail--container {
-    height: 90vh;
+    max-height: 90vh;
+  }
+  .wide--list {
+    max-width: 90vw;
+  }
+
+  .resume--container,
+  .home--container {
+    max-width: 90vw;
+    margin: 0 auto 2rem;
+    padding: 0;
   }
 }
 
@@ -730,6 +758,8 @@ button .big--github:hover {
     flex-direction: row;
     height: 5vh;
     align-items: center;
+    width: 90vw;
+    margin: 1em auto;
 
     justify-content: right;
   }
@@ -770,7 +800,7 @@ button .big--github:hover {
 
   .project--detail--img {
     max-width: 70%;
-    max-height: 75vh;
+    max-height: 65vh;
   }
 
   .contact {
@@ -795,6 +825,7 @@ button .big--github:hover {
     padding: 1em;
     grid-column: span 2;
     height: max-content;
+    font-size: 1.2rem;
     /* width: 90%; */
   }
   .home--hero > p {
@@ -818,7 +849,26 @@ button .big--github:hover {
     grid-column: span 3;
     /* margin: 1em; */
     padding: 1em 2em;
-    height: 100%;
+    /* max-width: 90%;
+      margin: 0 auto 2em; */
+    /* height: 100%; */
+    margin: 0 auto 2em;
+  }
+  .wide--list {
+    max-width: 90vw;
+    margin: 0 auto 2em;
+  }
+  /* .recent--project {
+    max-width: 90%;
+    margin: 0 auto 2em;
+  } */
+  .featured {
+    font-size: 1.2rem;
+  }
+  .resume--container,
+  .home--container {
+    max-width: 90vw;
+    margin: 0 auto 2rem;
   }
 }
 

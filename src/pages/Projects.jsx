@@ -75,7 +75,7 @@ export default function Projects(props) {
   ));
   return projects ? (
     <motion.div
-      className="project--list--container"
+      className="project--list--container wide--list"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       // exit={{ opacity: 0 }}
