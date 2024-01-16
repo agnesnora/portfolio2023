@@ -10,7 +10,7 @@ createServer({
       id: "1",
       name: "Movie List App",
       description:
-        "A simple searchable movie app built with React with the given requirements. Pop-up window with the movie details. Deletable lines and sortable columns. Both the table and the pop-up mode can be paged. Own design.",
+        "A simple searchable movie app for wide screens built with React with the given requirements. Pop-up window with the movie details. Deletable lines and sortable columns. Both the table and the pop-up mode can be paged. Own design.",
       imageUrl: "images/Movie.png",
       type: ["React", "CSS", "Fixed-width"],
       live: "https://agnesnora.github.io/movieListApp/",
