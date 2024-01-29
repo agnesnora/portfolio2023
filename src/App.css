@@ -836,6 +836,9 @@ button .big--github:hover {
     font-weight: 600;
     font-size: 1em;
   }
+  .navbar-lang {
+    display: flex;
+  }
 
   /* 
   .home--container {
