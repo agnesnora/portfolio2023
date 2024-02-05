@@ -60,23 +60,6 @@ export default function Resume() {
       <h3>My techstack</h3>
       <ul className="techstack--list">
         <li>
-          {" "}
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/html5-original-wordmark.svg"
-            alt="HTML"
-            width="40"
-            height="40"
-          />
-        </li>
-        <li>
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/css3-original-wordmark.svg"
-            alt="Css"
-            width="40"
-            height="40"
-          />
-        </li>
-        <li>
           <img
             src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/javascript-original.svg"
             alt="Javascript"
@@ -95,8 +78,24 @@ export default function Resume() {
         <li>
           {" "}
           <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/photoshop-line.svg"
-            alt="Photoshop"
+            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/html5-original-wordmark.svg"
+            alt="HTML"
+            width="40"
+            height="40"
+          />
+        </li>
+        <li>
+          <img
+            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/css3-original-wordmark.svg"
+            alt="Css"
+            width="40"
+            height="40"
+          />
+        </li>
+        <li>
+          <img
+            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/sass-original.svg"
+            alt="Sass"
             width="40"
             height="40"
           />
@@ -110,11 +109,19 @@ export default function Resume() {
             height="40"
           />
         </li>
-
         <li>
           <img
             src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Other/git-scm-icon.svg"
             alt="Git"
+            width="40"
+            height="40"
+          />
+        </li>{" "}
+        <li>
+          {" "}
+          <img
+            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/photoshop-line.svg"
+            alt="Photoshop"
             width="40"
             height="40"
           />
