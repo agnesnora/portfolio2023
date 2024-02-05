@@ -38,7 +38,7 @@ createServer({
       description:
         "Tindog is a dating app for dogs, which was a solo project of Scrimba Career Path. The main feature was to pop up a like/nope badge on the dog's image after clicking on the like or dislike buttons. I expanded it with a chat feature, and the users can also save the liked dogs in their profile.",
 
-      type: ["React", "Responsive", "CSS"],
+      type: ["React", "Responsive", "Sass"],
     });
 
     server.create("project", {
@@ -59,7 +59,7 @@ createServer({
       imageUrl: "images/Component.png",
       description:
         "This Component Library was a solo project as part of the Advanced React Module of the Scrimba Career Path. Built from scratch, creating reusable components in React. Own design.",
-      type: ["React", "CSS", "Responsive"],
+      type: ["React", "Sass", "Responsive"],
       live: "https://clever-kitten-80ba4d.netlify.app/",
       code: "https://github.com/agnesnora/componentLibrary",
     });
@@ -70,7 +70,7 @@ createServer({
       description:
         "In this recent project, I embarked on a hands-on journey to sharpen my coding skills by translating a Figma design into a functional web application. The primary goal of this exercise was to enhance my proficiency in CSS and polish my responsive design techniques.",
       imageUrl: "images/Data.png",
-      type: ["Responsive", "CSS", "React"],
+      type: ["Responsive", "Sass", "React"],
       live: "https://dataanalyticsagnesnora.netlify.app/",
       code: "https://github.com/agnesnora/Data-Analitics",
     });

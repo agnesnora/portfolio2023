@@ -352,6 +352,10 @@ p {
   background-color: #5d70ab;
   color: var(--primary-text-color);
 }
+.sass {
+  background-color: #de599e;
+  color: #fcfdff;
+}
 .html5 {
   background-color: #8d80b3;
   color: var(--primary-text-color);
