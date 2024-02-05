@@ -13,9 +13,12 @@ export default function Resume() {
           <h1>Hello there! I am Agnes.</h1>
           <p>
             <span className="highlighted--text">Frontend developer</span> with
-            an eye for details and in love with CSS. With a background in office
-            furniture, design and sales. Strong communication and
-            problem-solving skills.{" "}
+            an eye for details and in love with CSS and pixel-perfect design.
+            With a background in office furniture, design and sales I have
+            sharpened strong communication and problem-solving skills. I am
+            deeply passionate about creating user interfaces that not only meet
+            functional requirements but also elevate the user's overall
+            experience.{" "}
           </p>
           <button className="big--github ">
             <a
