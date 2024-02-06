@@ -130,6 +130,28 @@ export default function Resume() {
           />
         </li>
       </ul>
+      <h3>Current studies</h3>
+      <ul className="techstack--list">
+        <li>
+          <img
+            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/typescript-original.svg"
+            alt="Typescript"
+            width="40"
+            height="40"
+          />
+        </li>
+        <li>
+          <img src="../images/php.svg" alt="php" width="40" height="40" />
+        </li>
+        <li>
+          <img
+            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Testing/jestjsio-icon.svg"
+            alt="Jest"
+            width="40"
+            height="40"
+          />
+        </li>
+      </ul>
       <div className="resume--footer">
         <NavLink className="button--link" to="/projects">
           Explore projects
