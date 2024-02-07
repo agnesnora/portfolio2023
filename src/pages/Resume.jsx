@@ -52,7 +52,7 @@ export default function Resume() {
       alt: "Photoshop",
       id: 8,
     },
-    { src: "/public/images/Vitejs-logo.svg.png", alt: "Vite", id: 9 },
+    { src: "/images/Vitejs-logo.svg.png", alt: "Vite", id: 9 },
   ];
   const studyTechStackData = [
     {
