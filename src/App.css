@@ -600,6 +600,13 @@ button .big--github:hover {
 .navbar--container > a:hover {
   color: var(--highlighted-text-color);
 }
+.hovered--alt {
+  color: #d8c9de;
+  font-size: 0.8rem;
+  margin: 0.2em auto 0;
+  text-align: center;
+}
+
 /*********** @ M E D I A  **************/
 @media (min-width: 760px) {
   html,

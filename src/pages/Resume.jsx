@@ -1,6 +1,116 @@
 import { NavLink, Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
+import { useState } from "react";
+import shortid from "shortid";
 export default function Resume() {
+  const [hoveredImgId, setHoveredImgId] = useState(null);
+
+  const handleMouseEnter = (e) => {
+    const detailedId = e.target.dataset.id;
+    setHoveredImgId(detailedId);
+  };
+  const handleMouseLeave = () => setHoveredImgId(null);
+
+  const techStackData = [
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/javascript-original.svg",
+      alt: "Javascript",
+      id: 1,
+    },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/react-original-wordmark.svg",
+      alt: "React",
+      id: 2,
+    },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/html5-original-wordmark.svg",
+      alt: "HTML",
+      id: 3,
+    },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/css3-original-wordmark.svg",
+      alt: "CSS",
+      id: 4,
+    },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/sass-original.svg",
+      alt: "Sass",
+      id: 5,
+    },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/figma-icon.svg",
+      alt: "Figma",
+      id: 6,
+    },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Other/git-scm-icon.svg",
+      alt: "git",
+      id: 7,
+    },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/photoshop-line.svg",
+      alt: "Photoshop",
+      id: 8,
+    },
+    { src: "/public/images/Vitejs-logo.svg.png", alt: "Vite", id: 9 },
+  ];
+  const studyTechStackData = [
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/typescript-original.svg",
+      alt: "Typescript",
+      id: 10,
+    },
+    {
+      src: "../images/php.svg",
+      alt: "PHP",
+      id: 11,
+    },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Testing/jestjsio-icon.svg",
+      alt: "Jest",
+      id: 12,
+    },
+  ];
+  const TechStackEl = () => {
+    return techStackData.map((tech) => (
+      <li key={tech.alt}>
+        <img
+          src={tech.src}
+          alt={tech.alt}
+          width="40"
+          height="40"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          data-id={tech.id}
+        />
+        {hoveredImgId == tech.id ? (
+          <p className="hovered--alt">{tech.alt}</p>
+        ) : (
+          ""
+        )}
+      </li>
+    ));
+  };
+  const StudyTechStackEl = () => {
+    return studyTechStackData.map((tech) => (
+      <li key={tech.alt}>
+        <img
+          src={tech.src}
+          alt={tech.alt}
+          width="40"
+          height="40"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          data-id={tech.id}
+        />
+        {hoveredImgId == tech.id ? (
+          <p className="hovered--alt">{tech.alt}</p>
+        ) : (
+          ""
+        )}
+      </li>
+    ));
+  };
   return (
     <div className="resume--container">
       <div className="resume--header">
@@ -61,97 +171,9 @@ export default function Resume() {
       </main>
       <div className="resume--techstack"></div>
       <h3>My techstack</h3>
-      <ul className="techstack--list">
-        <li>
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/javascript-original.svg"
-            alt="Javascript"
-            width="40"
-            height="40"
-          />
-        </li>
-        <li>
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/react-original-wordmark.svg"
-            alt="React"
-            width="40"
-            height="40"
-          />
-        </li>
-        <li>
-          {" "}
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/html5-original-wordmark.svg"
-            alt="HTML"
-            width="40"
-            height="40"
-          />
-        </li>
-        <li>
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/css3-original-wordmark.svg"
-            alt="Css"
-            width="40"
-            height="40"
-          />
-        </li>
-        <li>
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/sass-original.svg"
-            alt="Sass"
-            width="40"
-            height="40"
-          />
-        </li>
-        <li>
-          {" "}
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/figma-icon.svg"
-            alt="Figma"
-            width="40"
-            height="40"
-          />
-        </li>
-        <li>
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Other/git-scm-icon.svg"
-            alt="Git"
-            width="40"
-            height="40"
-          />
-        </li>{" "}
-        <li>
-          {" "}
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/photoshop-line.svg"
-            alt="Photoshop"
-            width="40"
-            height="40"
-          />
-        </li>
-      </ul>
+      <ul className="techstack--list">{TechStackEl()}</ul>
       <h3>Current studies</h3>
-      <ul className="techstack--list">
-        <li>
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/typescript-original.svg"
-            alt="Typescript"
-            width="40"
-            height="40"
-          />
-        </li>
-        <li>
-          <img src="../images/php.svg" alt="php" width="40" height="40" />
-        </li>
-        <li>
-          <img
-            src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Testing/jestjsio-icon.svg"
-            alt="Jest"
-            width="40"
-            height="40"
-          />
-        </li>
-      </ul>
+      <ul className="techstack--list">{StudyTechStackEl()}</ul>
       <div className="resume--footer">
         <NavLink className="button--link" to="/projects">
           Explore projects
