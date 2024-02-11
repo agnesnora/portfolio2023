@@ -12,7 +12,7 @@ createServer({
       description:
         "A simple searchable movie app for wide screens built with React with the given requirements. Pop-up window with the movie details. Deletable lines and sortable columns. Both the table and the pop-up mode can be paged. Own design.",
       imageUrl: "images/Movie.png",
-      type: ["React", "CSS", "Fixed-width"],
+      type: ["React", "Sass", "Fixed-width"],
       live: "https://agnesnora.github.io/movieListApp/",
       code: "https://github.com/agnesnora/movieListApp",
     });
@@ -24,7 +24,7 @@ createServer({
       description:
         "This Quizzical app was a solo project as part of the React Basics Module of the Scrimba Frontend Career Path. Built from scratch using React, CSS and API. Own design with surprise confetti. ",
       imageUrl: "images/Quizzical.png",
-      type: ["React", "CSS", "Responsive"],
+      type: ["React", "Sass", "Responsive"],
       live: "https://agnesnora.github.io/quizzical/",
       code: "https://github.com/agnesnora/quizzical",
     });

@@ -38,8 +38,8 @@ export default function Resume() {
       id: 5,
     },
     {
-      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/figma-icon.svg",
-      alt: "Figma",
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/tailwindcss-icon.svg",
+      alt: "Tailwindcss",
       id: 6,
     },
     {
@@ -47,28 +47,35 @@ export default function Resume() {
       alt: "git",
       id: 7,
     },
+
+    { src: "/images/Vitejs-logo.svg.png", alt: "Vite", id: 8 },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/figma-icon.svg",
+      alt: "Figma",
+      id: 9,
+    },
+
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/photoshop-line.svg",
       alt: "Photoshop",
-      id: 8,
+      id: 10,
     },
-    { src: "/images/Vitejs-logo.svg.png", alt: "Vite", id: 9 },
   ];
   const studyTechStackData = [
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/typescript-original.svg",
       alt: "Typescript",
-      id: 10,
+      id: 11,
     },
     {
       src: "../images/php.svg",
       alt: "PHP",
-      id: 11,
+      id: 12,
     },
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Testing/jestjsio-icon.svg",
       alt: "Jest",
-      id: 12,
+      id: 13,
     },
   ];
   const TechStackEl = () => {
