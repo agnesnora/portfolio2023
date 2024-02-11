@@ -181,7 +181,7 @@ export default function Resume() {
 
         <a
           className="button--link"
-          href="/images/AgnesKutiPalasthyCV.pdf"
+          href="/images/Ágnes Kuti-Palásthy CV_no-photo.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
