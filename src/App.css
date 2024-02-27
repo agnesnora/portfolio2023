@@ -347,9 +347,16 @@ p {
   background-color: gray;
   color: var(--primary-bg-color);
 }
+.typescript {
+  background-color: #edd556;
+}
 
 .css {
   background-color: #5d70ab;
+  color: var(--primary-text-color);
+}
+.jest {
+  background-color: #726cee;
   color: var(--primary-text-color);
 }
 .sass {
