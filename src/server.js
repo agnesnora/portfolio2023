@@ -19,6 +19,17 @@ createServer({
 
     server.create("project", {
       id: "2",
+      name: "DevJobs",
+
+      description:
+        "I have chosen an advanced frontend challenge from the Frontend Mentor website. The challenge involved building a jobs board application using React, TypeScript, and React Router. The application retrieves job data from a local JSON file, enabling users to filter jobs by title, location, and full-time positions. Users can also view detailed job descriptions and navigate to the company’s website for more information. I implemented Jest for testing functions and utilized TypeScript for type safety. Additionally, I incorporated a theme based on the user's preferred color scheme. Overall, it was a challenging yet rewarding experience, especially integrating multiple technologies to create a seamless user experience. ",
+      imageUrl: "images/devjobs.png",
+      type: ["TypeScript", "React", "Sass", "Responsive"],
+      live: "https://devjobs-agnesnora.netlify.app/",
+      code: "https://github.com/agnesnora/devjobs",
+    });
+    server.create("project", {
+      id: "3",
       name: "Quizzical",
 
       description:
@@ -29,7 +40,7 @@ createServer({
       code: "https://github.com/agnesnora/quizzical",
     });
     server.create("project", {
-      id: "3",
+      id: "4",
       name: "Tindog",
       imageUrl: "images/Tindog.png",
       live: "https://tindogagnesnora.netlify.app",
@@ -42,7 +53,7 @@ createServer({
     });
 
     server.create("project", {
-      id: "4",
+      id: "5",
       name: "Color Scheme Generator",
 
       description:
@@ -54,7 +65,7 @@ createServer({
     });
 
     server.create("project", {
-      id: "5",
+      id: "6",
       name: "Snap RemoteWork",
       imageUrl: "images/snap.png",
       description:
@@ -64,7 +75,7 @@ createServer({
       code: "https://github.com/agnesnora/remotework_ts",
     });
     server.create("project", {
-      id: "6",
+      id: "7",
       name: "Planet Fact Site",
       imageUrl: "images/planet.png",
       description:
@@ -75,7 +86,7 @@ createServer({
       code: "https://github.com/agnesnora/planets-fact-site",
     });
     server.create("project", {
-      id: "7",
+      id: "8",
       name: "Component library",
       imageUrl: "images/Component.png",
       description:
@@ -85,7 +96,7 @@ createServer({
       code: "https://github.com/agnesnora/componentLibrary",
     });
     server.create("project", {
-      id: "8",
+      id: "9",
       name: "Data Analytics",
 
       description:
