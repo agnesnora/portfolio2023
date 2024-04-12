@@ -68,8 +68,8 @@ export default function Resume() {
       id: 11,
     },
     {
-      src: "../images/php.svg",
-      alt: "PHP",
+      src: "https://profilinator.rishav.dev/skills-assets/nextjs.png",
+      alt: "Next.js",
       id: 12,
     },
     {
