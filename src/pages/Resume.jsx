@@ -152,27 +152,43 @@ export default function Resume() {
         <div>
           <h3>About me</h3>
           <p>
-            Hello again! I graduated as a landscape architect from Corvinus
-            University of Budapest and started to work as a design engineer at a
-            furniture company. Working as a designer, I provided support to
-            sales managers in design concepts, space planning, visualization and
-            tenders. As a creative person, layouts and visualization have always
-            been my favourite. But my logical side was missing something.
+            Hi! I am a landscape architect by degree, having graduated from
+            Corvinus University of Budapest, but my career path has taken some
+            exciting turns. I started working as a design engineer in a
+            furniture company, where I focused on design concepts, space
+            planning, visualization, and tenders. Throughout my time there, I
+            found that my creative side thrived on designing layouts and
+            creating visualizations—but something was missing. I realized that
+            my logical side was craving more challenges.
           </p>
           <p>
-            In 2022, I had the chance to join a Frontend Dev Cohort of women
-            from all around the world and realized that, as a frontend
-            developer, both my creative and logical sides could be satisfied.
-            Since the day I stepped into the world of coding, I could not stop
-            learning and immediately joined the Frontend Career Path at Scrimba.
-            This course was a game-changer for me. With tons of coding
-            challenges and real-world solo projects, it has really challenged me
-            again and again and made me realize how motivated I am.
+            In 2022, I had the opportunity to join a global Frontend Development
+            Cohort for women. This experience was a revelation. I discovered
+            that as a frontend developer, I could combine creativity with
+            logical problem-solving. From that moment on, I was hooked on
+            coding. I dove deep into learning, immediately joining the Frontend
+            Career Path at Scrimba, which pushed me to tackle coding challenges
+            and real-world projects that further fueled my passion for
+            development.
           </p>
           <p>
-            Now I feel ready to get more adventurous and, after all of these
-            real-world solo projects, finally start to work as a frontend
-            developer.
+            Since then, I have been driven by a persistent desire to learn new
+            technologies. I am always exploring ways to expand my skill set and
+            stay up-to-date with the latest tools and frameworks. From
+            JavaScript, React, and CSS to more advanced tools like Next.js and
+            TypeScript, I am constantly seeking out new challenges that allow me
+            to grow as a developer.
+          </p>
+          <p>
+            One of the things I love most about frontend development is how it
+            lets me balance both my creative and logical sides. I get to design
+            beautiful, user-friendly interfaces while also solving complex
+            technical problems. I am not afraid of diving into new technologies
+            and tackling unfamiliar challenges head-on. In fact, I thrive in
+            environments where learning never stops. I am excited to keep
+            pushing the boundaries of what I can do and eager to take on new
+            projects that allow me to apply my skills while learning even more
+            along the way.
           </p>
         </div>
       </main>
