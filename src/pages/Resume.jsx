@@ -97,6 +97,11 @@ export default function Resume() {
       alt: "Jest",
       id: 16,
     },
+    {
+      src: "/images/docker-mark-blue.png",
+      alt: "docker",
+      id: 17,
+    },
   ];
   const TechStackEl = () => {
     return techStackData.map((tech) => (
