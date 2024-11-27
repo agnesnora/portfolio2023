@@ -1,7 +1,7 @@
 import { NavLink, Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
-import shortid from "shortid";
+
 export default function Resume() {
   const [hoveredImgId, setHoveredImgId] = useState(null);
 
@@ -50,32 +50,52 @@ export default function Resume() {
 
     { src: "/images/Vitejs-logo.svg.png", alt: "Vite", id: 8 },
     {
-      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/figma-icon.svg",
-      alt: "Figma",
+      src: "https://profilinator.rishav.dev/skills-assets/nextjs.png",
+      alt: "NextJS",
       id: 9,
     },
 
     {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/typescript-original.svg",
+      alt: "Typescript",
+      id: 10,
+    },
+    {
+      src: "images/MongoDB_Logo.svg",
+      alt: "mongoDB",
+      id: 11,
+    },
+    {
+      src: "images/MySQL-Logo.wine.svg",
+      alt: "MySQL",
+      id: 11,
+    },
+    {
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/figma-icon.svg",
+      alt: "Figma",
+      id: 12,
+    },
+    {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Software/photoshop-line.svg",
       alt: "Photoshop",
-      id: 10,
+      id: 13,
     },
   ];
   const studyTechStackData = [
     {
-      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/typescript-original.svg",
-      alt: "Typescript",
-      id: 11,
+      src: "/images/php.svg",
+      alt: "PHP",
+      id: 14,
     },
     {
-      src: "https://profilinator.rishav.dev/skills-assets/nextjs.png",
-      alt: "Next.js",
-      id: 12,
+      src: "/images/Laravel.svg.png",
+      alt: "Laravel",
+      id: 15,
     },
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Testing/jestjsio-icon.svg",
       alt: "Jest",
-      id: 13,
+      id: 16,
     },
   ];
   const TechStackEl = () => {
@@ -204,7 +224,7 @@ export default function Resume() {
 
         <a
           className="button--link"
-          href="/images/Ágnes Kuti-Palásthy CV_no-photo.pdf"
+          href="/images/Ágnes Kuti-Palásthy CV 2024-10canva.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
