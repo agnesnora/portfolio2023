@@ -79,7 +79,7 @@ createServer({
       name: "Planet Fact Site",
       imageUrl: "images/planet.png",
       description:
-        "Build an 8-page planets fact site, following the provided design, allowing users to explore information about each planet. The key functionalities include the ability to toggle between 'Overview','Internal Structure,,1 and 'Surface Geology' tabs, ensuring an optimal layout based on the device's screen size, and providing hover states for interactive elements. I have been using React for building the components and managing state, React Router for navigation between planet page and Jest and React Testing Library for testing components and ensuring functionality",
+        "Build an 8-page planets fact site, following the provided design, allowing users to explore information about each planet. The key functionalities include the ability to toggle between Overview, Internal Structure and Surface Geology tabs, ensuring an optimal layout based on the device's screen size, and providing hover states for interactive elements. I have been using React for building the components and managing state, React Router for navigation between planet page and Jest and React Testing Library for testing components and ensuring functionality",
 
       type: ["TypeScript", "React", "Responsive", "Sass"],
       live: "https://planets-site-facts.netlify.app/",
