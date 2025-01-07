@@ -229,7 +229,7 @@ export default function Resume() {
 
         <a
           className="button--link"
-          href="/images/Ágnes Kuti-Palásthy CV 2024-12.pdf"
+          href="/images/Ágnes Kuti Palásthy CV 2025.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
