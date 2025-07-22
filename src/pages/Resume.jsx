@@ -1,4 +1,4 @@
-import { NavLink} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
 
@@ -159,8 +159,7 @@ export default function Resume() {
             With a background in office furniture, design and sales I have
             sharpened strong communication and problem-solving skills. I am
             deeply passionate about creating user interfaces that not only meet
-            functional requirements but also elevate the overall
-            experience.{" "}
+            functional requirements but also elevate the overall experience.{" "}
           </p>
           <button className="big--github ">
             <a
@@ -229,7 +228,7 @@ export default function Resume() {
 
         <a
           className="button--link"
-          href="/images/Ágnes Kuti Palásthy CV 2025.pdf"
+          href="/images/Ágnes Kuti-Palásthy CV 2025-07.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
