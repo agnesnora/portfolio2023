@@ -176,43 +176,28 @@ export default function Resume() {
         <div>
           <h3>About me</h3>
           <p>
-            Hi! I am a landscape architect by degree, having graduated from
-            Corvinus University of Budapest, but my career path has taken some
-            exciting turns. I started working as a design engineer in a
-            furniture company, where I focused on design concepts, space
-            planning, visualization, and tenders. Throughout my time there, I
-            found that my creative side thrived on designing layouts and
-            creating visualizations—but something was missing. I realized that
-            my logical side was craving more challenges.
+            Hi! I am a frontend developer with a unique background in landscape
+            architecture, holding a degree from Corvinus University of Budapest.
+            My journey into tech began through design engineering in the
+            furniture industry, where I specialized in spatial planning,
+            visualization, and concept design. Though I loved the creative work,
+            I found myself craving more logical and technical challenges.
           </p>
           <p>
-            In 2022, I had the opportunity to join a global Frontend Development
-            Cohort for women. This experience was a revelation. I discovered
-            that as a frontend developer, I could combine creativity with
-            logical problem-solving. From that moment on, I was hooked on
-            coding. I dove deep into learning, immediately joining the Frontend
-            Career Path at Scrimba, which pushed me to tackle coding challenges
-            and real-world projects that further fueled my passion for
-            development.
+            In 2022, I joined a global Frontend Development Cohort for women,
+            which was a turning point in my career. I discovered the perfect
+            blend of creativity and logic in coding and was immediately hooked.
+            Since then, I have been consistently growing my skill set through
+            intensive learning programs like the Scrimba Frontend Career Path,
+            building real-world projects, and experimenting with a wide range of
+            tools and frameworks.
           </p>
           <p>
-            Since then, I have been driven by a persistent desire to learn new
-            technologies. I am always exploring ways to expand my skill set and
-            stay up-to-date with the latest tools and frameworks. From
-            JavaScript, React, and CSS to more advanced tools like Next.js and
-            TypeScript, I am constantly seeking out new challenges that allow me
-            to grow as a developer.
-          </p>
-          <p>
-            One of the things I love most about frontend development is how it
-            lets me balance both my creative and logical sides. I get to design
-            beautiful, user-friendly interfaces while also solving complex
-            technical problems. I am not afraid of diving into new technologies
-            and tackling unfamiliar challenges head-on. In fact, I thrive in
-            environments where learning never stops. I am excited to keep
-            pushing the boundaries of what I can do and eager to take on new
-            projects that allow me to apply my skills while learning even more
-            along the way.
+            Today, I work as a frontend developer with experience in React,
+            Next.js, TypeScript, and more. I am currently deepening my backend
+            knowledge with Java and Spring Boot to grow into a fullstack role. I
+            thrive in environments where learning never stops and enjoy building
+            beautiful, responsive interfaces that solve real problems.
           </p>
         </div>
       </main>
