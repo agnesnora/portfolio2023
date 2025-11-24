@@ -53,7 +53,9 @@ export default function ProjectDetail() {
     return <h1 className="loading">Loading...</h1>;
   }
   const handleClickImage = () => {
-    window.open(project.live, "_blank");
+    if (project.live) {
+      window.open(project.live, "_blank");
+    }
   };
   return project ? (
     <motion.div
@@ -68,46 +70,61 @@ export default function ProjectDetail() {
 
         {windowWidth > 760 ? (
           <div className="detailed--header--link">
-            <a
-              href={project.live}
-              className=" linkbutton background--link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live App
-            </a>
-
-            <a
-              href={project.code}
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" linkbutton background--link"
-            >
-              Source Code
-            </a>
-          </div>
-        ) : (
-          <div className="detailed--header--link">
-            <button className="linkbutton">
+            {project.live ? (
               <a
                 href={project.live}
-                className="link--icon"
+                className=" linkbutton background--link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaExternalLinkSquareAlt className="link--icon" />
+                Live App
               </a>
-            </button>
-            <button className="linkbutton">
+            ) : (
+              ""
+            )}
+            {project.code ? (
               <a
                 href={project.code}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link--icon"
+                className=" linkbutton background--link"
               >
-                <FaGithub className="link--icon" />
+                Source Code
               </a>
-            </button>
+            ) : (
+              ""
+            )}
+          </div>
+        ) : (
+          <div className="detailed--header--link">
+            {project.live ? (
+              <button className="linkbutton">
+                <a
+                  href={project.live}
+                  className="link--icon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaExternalLinkSquareAlt className="link--icon" />
+                </a>
+              </button>
+            ) : (
+              ""
+            )}
+            {project.code ? (
+              <button className="linkbutton">
+                <a
+                  href={project.code}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link--icon"
+                >
+                  <FaGithub className="link--icon" />
+                </a>
+              </button>
+            ) : (
+              ""
+            )}
           </div>
         )}
       </div>
@@ -128,8 +145,11 @@ export default function ProjectDetail() {
         <img
           className="project--detail--img"
           alt={`snapshot of ${project.name} project`}
-          src={`/${project.imageUrl}`}
-          onClick={handleClickImage}
+          src={project.imageUrl ? `/${project.imageUrl}` : ""}
+          onClick={project.imageUrl ? handleClickImage : undefined}
+          style={{
+            cursor: project.imageUrl && project.live ? "pointer" : "default",
+          }}
         />
 
         <div className="project--detail--info">

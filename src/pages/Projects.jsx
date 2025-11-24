@@ -43,7 +43,7 @@ export default function Projects(props) {
     return <h1 className="loading">Loading...</h1>;
   }
   const projectElements = (
-    props.featured ? projects.slice(1, 4) : projects
+    props.featured ? projects.slice(0, 3) : projects
   ).map((project) => (
     <Link key={project.id} to={`/projects/${project.id}`}>
       <div

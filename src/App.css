@@ -359,9 +359,17 @@ p {
   background-color: #726cee;
   color: var(--primary-text-color);
 }
-.sass {
+.scss {
   background-color: #de599e;
   color: #fcfdff;
+}
+.nextjs {
+  background-color: #661e53;
+  color: #fcfdff;
+}
+.tailwind {
+  background-color: #ffc3ec;
+  color: #10080d;
 }
 .html5 {
   background-color: #8d80b3;

@@ -11,59 +11,53 @@ export default function Resume() {
   };
   const handleMouseLeave = () => setHoveredImgId(null);
 
+  // Main tech stack: prioritize TS, Next.js, React
   const techStackData = [
     {
-      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/javascript-original.svg",
-      alt: "Javascript",
+      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/typescript-original.svg",
+      alt: "TypeScript",
       id: 1,
+    },
+    {
+      src: "https://profilinator.rishav.dev/skills-assets/nextjs.png",
+      alt: "NextJS",
+      id: 2,
     },
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/react-original-wordmark.svg",
       alt: "React",
-      id: 2,
+      id: 3,
     },
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/html5-original-wordmark.svg",
       alt: "HTML",
-      id: 3,
+      id: 4,
     },
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/css3-original-wordmark.svg",
       alt: "CSS",
-      id: 4,
+      id: 5,
     },
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/sass-original.svg",
-      alt: "Sass",
-      id: 5,
+      alt: "SCSS",
+      id: 6,
     },
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/tailwindcss-icon.svg",
       alt: "Tailwindcss",
-      id: 6,
+      id: 7,
     },
     {
       src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Other/git-scm-icon.svg",
-      alt: "git",
-      id: 7,
+      alt: "Git",
+      id: 8,
     },
-
-    { src: "/images/Vitejs-logo.svg.png", alt: "Vite", id: 8 },
-    {
-      src: "https://profilinator.rishav.dev/skills-assets/nextjs.png",
-      alt: "NextJS",
-      id: 9,
-    },
-
-    {
-      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/typescript-original.svg",
-      alt: "Typescript",
-      id: 10,
-    },
+    { src: "/images/Vitejs-logo.svg.png", alt: "Vite", id: 9 },
     {
       src: "images/MongoDB_Logo.svg",
-      alt: "mongoDB",
-      id: 11,
+      alt: "MongoDB",
+      id: 10,
     },
     {
       src: "images/MySQL-Logo.wine.svg",
@@ -81,28 +75,16 @@ export default function Resume() {
       id: 13,
     },
   ];
+
+  // Studying / in progress techs
   const studyTechStackData = [
     {
-      src: "/images/php.svg",
-      alt: "PHP",
+      src: "/images/nodejs.png",
+      alt: "Node.js",
       id: 14,
     },
-    {
-      src: "/images/Laravel.svg.png",
-      alt: "Laravel",
-      id: 15,
-    },
-    {
-      src: "https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Testing/jestjsio-icon.svg",
-      alt: "Jest",
-      id: 16,
-    },
-    {
-      src: "/images/docker-mark-blue.png",
-      alt: "docker",
-      id: 17,
-    },
   ];
+
   const TechStackEl = () => {
     return techStackData.map((tech) => (
       <li key={tech.alt}>
@@ -154,12 +136,13 @@ export default function Resume() {
         <div className="resume--about">
           <h1>Hello there! I am Agnes.</h1>
           <p>
-            <span className="highlighted--text">Frontend developer</span> with
-            an eye for details and in love with CSS and pixel-perfect design.
-            With a background in office furniture, design and sales I have
-            sharpened strong communication and problem-solving skills. I am
-            deeply passionate about creating user interfaces that not only meet
-            functional requirements but also elevate the overall experience.{" "}
+            <span className="highlighted--text">Frontend developer</span> with a
+            passion for building intuitive, responsive, and visually polished
+            web applications. I specialize in React, Next.js, and TypeScript,
+            delivering solutions that combine clean code, thoughtful design, and
+            practical functionality. I enjoy tackling complex challenges and
+            combining tools and techniques creatively to ensure clients get
+            exactly what they need.
           </p>
           <button className="big--github ">
             <a
@@ -176,28 +159,22 @@ export default function Resume() {
         <div>
           <h3>About me</h3>
           <p>
-            Hi! I am a frontend developer with a unique background in landscape
-            architecture, holding a degree from Corvinus University of Budapest.
-            My journey into tech began through design engineering in the
-            furniture industry, where I specialized in spatial planning,
-            visualization, and concept design. Though I loved the creative work,
-            I found myself craving more logical and technical challenges.
+            With experience as a design engineer and frontend developer, I have
+            worked on a range of projects from concept to deployment. I
+            currently contribute to the Beeco app as a frontend developer and
+            have completed multiple other projects.I focus on building solutions
+            that are efficient, practical, and tailored to client needs,
+            combining design, code, and creativity in smart ways. I enjoy
+            experimenting with different approaches to deliver the best possible
+            outcome while optimizing resources.
           </p>
+
           <p>
-            In 2022, I joined a global Frontend Development Cohort for women,
-            which was a turning point in my career. I discovered the perfect
-            blend of creativity and logic in coding and was immediately hooked.
-            Since then, I have been consistently growing my skill set through
-            intensive learning programs like the Scrimba Frontend Career Path,
-            building real-world projects, and experimenting with a wide range of
-            tools and frameworks.
-          </p>
-          <p>
-            Today, I work as a frontend developer with experience in React,
-            Next.js, TypeScript, and more. I am currently deepening my backend
-            knowledge with Java and Spring Boot to grow into a fullstack role. I
-            thrive in environments where learning never stops and enjoy building
-            beautiful, responsive interfaces that solve real problems.
+            My technical stack includes React, Next.js, and TypeScript. I am
+            also expanding my backend knowledge and currently learning Node.js
+            to grow into fullstack development.I thrive on problem-solving,
+            creating user-friendly interfaces, and collaborating with teams or
+            clients to turn ideas into reliable, maintainable web solutions.
           </p>
         </div>
       </main>

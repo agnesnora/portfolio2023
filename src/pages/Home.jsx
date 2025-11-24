@@ -19,15 +19,20 @@ export default function Home() {
       transition={{ duration: 1 }}
     >
       <div className="home--hero">
-        <p>
+        {/* <p>
           <span className="text--uppercase">{`<Hello/>`}</span>
-        </p>
+        </p> */}
         <h1>
-          I am <span>Agnes.</span>
+          Hi, I am Ágnes a Frontend Developer and Designer based in Hungary.
         </h1>
+        {/* <h2>Frontend Developer & Designer | React & Next.js</h2> */}
+        <p></p>
         <p>
-          <span>Frontend developer</span>, designer, landscape architect and a
-          passionate gardener located in Hungary.
+          I specialize in React and Next.js, creating intuitive, reliable, and
+          efficient web solutions. With experience as a design engineer, I bring
+          a practical, solution-oriented approach to every project. I love
+          learning new technologies and combining creative ideas into
+          functional, beautiful interfaces.
         </p>
 
         <div className="home--link">

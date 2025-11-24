@@ -8,39 +8,67 @@ createServer({
   seeds(server) {
     server.create("project", {
       id: "1",
+      name: "Ciklusharmónia Web Page",
+      description:
+        "Built a full website for a menstrual-cycle mentoring coach (FEMM/BOM), including custom design and an easy-to-use blog interface powered by Sanity. I focused on keeping everything affordable, choosing budget-friendly tools like MailerLite, Resend, a low-cost booking system, and automations with Make to simplify her daily tasks.",
+      imageUrl: "images/Ciklusharmónia.svg",
+      type: ["NextJs", "Typescript", "SCSS", "Responsive"],
+      live: "https://ciklusharmonia.com",
+    });
+
+    server.create("project", {
+      id: "2",
+      name: "Beeco Admin App",
+
+      description:
+        "Rebuilt the company’s entire admin application from scratch, migrating it from Angular to React with TypeScript. Worked with the backend engineer, added new features, improved existing functionality, and resolved bugs to significantly modernize the platform. ",
+      imageUrl: "images/Beeco Admin App.svg",
+      type: ["TypeScript", "React", "SCSS", "Fixed-width"],
+    });
+    server.create("project", {
+      id: "3",
+      name: "Beeco Partner App",
+
+      description:
+        "Contributed to the company’s partner application by implementing new features, improving existing functionality, and resolving bugs to enhance overall reliability and user experience. ",
+      imageUrl: "images/Beeco Partner App.svg",
+      type: ["React", "Tailwind", "Responsive"],
+    });
+    server.create("project", {
+      id: "4",
       name: "Movie List App",
       description:
         "A simple searchable movie app for wide screens built with React with the given requirements. Pop-up window with the movie details. Deletable lines and sortable columns. Both the table and the pop-up mode can be paged. Own design.",
       imageUrl: "images/Movie.png",
-      type: ["React", "Sass", "Fixed-width"],
+      type: ["React", "SCSS", "Fixed-width"],
       live: "https://agnesnora.github.io/movieListApp/",
       code: "https://github.com/agnesnora/movieListApp",
     });
 
     server.create("project", {
-      id: "2",
+      id: "5",
       name: "DevJobs",
 
       description:
         "I have chosen an advanced frontend challenge from the Frontend Mentor website. The challenge involved building a jobs board application using React, TypeScript, and React Router. The application retrieves job data from a local JSON file, enabling users to filter jobs by title, location, and full-time positions. Users can also view detailed job descriptions and navigate to the company’s website for more information. I implemented Jest for testing functions and utilized TypeScript for type safety. Additionally, I incorporated a theme based on the user's preferred color scheme. Overall, it was a challenging yet rewarding experience, especially integrating multiple technologies to create a seamless user experience. ",
       imageUrl: "images/devjobs.png",
-      type: ["TypeScript", "React", "Sass", "Responsive"],
+      type: ["TypeScript", "React", "SCSS", "Responsive"],
       live: "https://devjobs-agnesnora.netlify.app/",
       code: "https://github.com/agnesnora/devjobs",
     });
     server.create("project", {
-      id: "3",
+      id: "6",
       name: "Quizzical",
 
       description:
         "This Quizzical app was a solo project as part of the React Basics Module of the Scrimba Frontend Career Path. Built from scratch using React, CSS and API. Own design with surprise confetti. ",
       imageUrl: "images/Quizzical.png",
-      type: ["React", "Sass", "Responsive"],
+      type: ["React", "SCSS", "Responsive"],
       live: "https://agnesnora.github.io/quizzical/",
       code: "https://github.com/agnesnora/quizzical",
     });
     server.create("project", {
-      id: "4",
+      id: "7",
       name: "Tindog",
       imageUrl: "images/Tindog.png",
       live: "https://tindogagnesnora.netlify.app",
@@ -49,11 +77,11 @@ createServer({
       description:
         "Tindog is a dating app for dogs, which was a solo project of Scrimba Career Path. The main feature was to pop up a like/nope badge on the dog's image after clicking on the like or dislike buttons. I expanded it with a chat feature, and the users can also save the liked dogs in their profile.",
 
-      type: ["React", "Responsive", "Sass"],
+      type: ["React", "Responsive", "SCSS"],
     });
 
     server.create("project", {
-      id: "5",
+      id: "8",
       name: "Color Scheme Generator",
 
       description:
@@ -65,44 +93,44 @@ createServer({
     });
 
     server.create("project", {
-      id: "6",
+      id: "9",
       name: "Snap RemoteWork",
       imageUrl: "images/snap.png",
       description:
         "This project is my very first experience using TypeScript in which I am aiming to build a reusable Navbar component and craft a responsive website. The project also marks my initial exploration into testing with Jest for React code. While diving into the world of TypeScript and React, I took on the challenge of incorporating Jest for testing, which brought its own set of challenges. One of the significant hurdles was setting up a seamless environment where Vite, TypeScript, and Jest could seamlessly work together.",
-      type: ["TypeScript", "React", "Responsive", "Sass", "Jest"],
+      type: ["TypeScript", "React", "Responsive", "SCSS", "Jest"],
       live: "https://remoteworkts.netlify.app/",
       code: "https://github.com/agnesnora/remotework_ts",
     });
     server.create("project", {
-      id: "7",
+      id: "10",
       name: "Planet Fact Site",
       imageUrl: "images/planet.png",
       description:
         "Build an 8-page planets fact site, following the provided design, allowing users to explore information about each planet. The key functionalities include the ability to toggle between Overview, Internal Structure and Surface Geology tabs, ensuring an optimal layout based on the device's screen size, and providing hover states for interactive elements. I have been using React for building the components and managing state, React Router for navigation between planet page and Jest and React Testing Library for testing components and ensuring functionality",
 
-      type: ["TypeScript", "React", "Responsive", "Sass"],
+      type: ["TypeScript", "React", "Responsive", "SCSS"],
       live: "https://planets-site-facts.netlify.app/",
       code: "https://github.com/agnesnora/planets-fact-site",
     });
     server.create("project", {
-      id: "8",
+      id: "11",
       name: "Component library",
       imageUrl: "images/Component.png",
       description:
         "This Component Library was a solo project as part of the Advanced React Module of the Scrimba Career Path. Built from scratch, creating reusable components in React. Own design.",
-      type: ["React", "Sass", "Responsive"],
+      type: ["React", "SCSS", "Responsive"],
       live: "https://clever-kitten-80ba4d.netlify.app/",
       code: "https://github.com/agnesnora/componentLibrary",
     });
     server.create("project", {
-      id: "9",
+      id: "12",
       name: "Data Analytics",
 
       description:
         "In this recent project, I embarked on a hands-on journey to sharpen my coding skills by translating a Figma design into a functional web application. The primary goal of this exercise was to enhance my proficiency in CSS and polish my responsive design techniques.",
       imageUrl: "images/Data.png",
-      type: ["Responsive", "Sass", "React"],
+      type: ["Responsive", "SCSS", "React"],
       live: "https://dataanalyticsagnesnora.netlify.app/",
       code: "https://github.com/agnesnora/Data-Analitics",
     });
