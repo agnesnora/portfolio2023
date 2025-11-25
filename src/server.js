@@ -21,7 +21,7 @@ createServer({
       name: "Beeco Admin App",
 
       description:
-        "Rebuilt the company’s entire admin application from scratch, migrating it from Angular to React with TypeScript. Worked with the backend engineer, added new features, improved existing functionality, and resolved bugs to significantly modernize the platform. ",
+        "Rebuilt the company’s entire admin application from scratch, migrating it from Angular to React with TypeScript. Worked with the backend engineer, added new features, improved existing functionality, and resolved bugs to significantly modernize the platform. Leveraged React Query to improve data-fetching performance on large datasets and adopted React Hook Form to simplify and speed up form-heavy user interactions. ",
       imageUrl: "images/Beeco Admin App.svg",
       type: ["TypeScript", "React", "SCSS", "Fixed-width"],
     });
