@@ -86,7 +86,7 @@ footer > .social--icons {
 .techstack--list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
-  gap: 0.5em;
+  gap: 1.5rem;
 }
 ul {
   padding-left: 0;
@@ -490,6 +490,12 @@ h1 {
   color: var(--highlighted-text-color);
   font-family: "Poppins", sans-serif;
   font-size: 2em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.home--hero > h1 > span {
+  display: inline;
 }
 .home--hero {
   width: 100%;

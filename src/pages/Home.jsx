@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Contact from "./Contact";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Projects from "../pages/Projects";
 export default function Home() {
   const [isContact, setIsContact] = useState(false);
@@ -23,8 +23,23 @@ export default function Home() {
           <span className="text--uppercase">{`<Hello/>`}</span>
         </p> */}
         <h1>
-          Hi, I am Ágnes a Frontend Developer and Designer based in Hungary.
+          {"Hi, I am Ágnes a Frontend Developer and Designer based in Hungary."
+            .split(" ")
+            .map((word, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: i * 0.1 }}
+                style={{ display: "inline-block", marginRight: "0.3em" }}
+              >
+                {word}
+              </motion.span>
+            ))}
         </h1>
+        {/* <h1>
+          Hi, I am Ágnes a Frontend Developer and Designer based in Hungary.
+        </h1> */}
         {/* <h2>Frontend Developer & Designer | React & Next.js</h2> */}
         <p></p>
         <p>

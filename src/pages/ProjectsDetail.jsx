@@ -7,7 +7,7 @@ import {
   FaExternalLinkSquareAlt,
 } from "react-icons/fa";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 export default function ProjectDetail() {
   const params = useParams();
   const [project, setProject] = useState({});

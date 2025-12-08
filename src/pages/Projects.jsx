@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { PiArrowBendRightDownBold } from "react-icons/pi";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 export default function Projects(props) {
   const [projects, setProjects] = useState([]);
   const [hoveredProject, setHoveredProject] = useState({});

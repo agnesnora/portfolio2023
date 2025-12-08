@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
+import { motion } from "motion/react";
 
 export default function Resume() {
   const [hoveredImgId, setHoveredImgId] = useState(null);
@@ -86,13 +87,18 @@ export default function Resume() {
   ];
 
   const TechStackEl = () => {
-    return techStackData.map((tech) => (
-      <li key={tech.alt}>
+    return techStackData.map((tech, i) => (
+      <motion.li
+        key={tech.alt}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: i * 0.1 }}
+      >
         <img
           src={tech.src}
           alt={tech.alt}
-          width="40"
-          height="40"
+          width="50"
+          height="50"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           data-id={tech.id}
@@ -102,7 +108,7 @@ export default function Resume() {
         ) : (
           ""
         )}
-      </li>
+      </motion.li>
     ));
   };
   const StudyTechStackEl = () => {
@@ -111,8 +117,8 @@ export default function Resume() {
         <img
           src={tech.src}
           alt={tech.alt}
-          width="40"
-          height="40"
+          width="50"
+          height="50"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           data-id={tech.id}
@@ -162,9 +168,9 @@ export default function Resume() {
             With experience as a design engineer and frontend developer, I have
             worked on a range of projects from concept to deployment. I
             currently contribute to the Beeco app as a frontend developer and
-            have completed multiple other projects.I focus on building solutions
-            that are efficient, practical, and tailored to client needs,
-            combining design, code, and creativity in smart ways. I enjoy
+            have completed multiple other projects. I focus on building
+            solutions that are efficient, practical, and tailored to client
+            needs, combining design, code, and creativity in smart ways. I enjoy
             experimenting with different approaches to deliver the best possible
             outcome while optimizing resources.
           </p>
@@ -172,7 +178,7 @@ export default function Resume() {
           <p>
             My technical stack includes React, Next.js, and TypeScript. I am
             also expanding my backend knowledge and currently learning Node.js
-            to grow into fullstack development.I thrive on problem-solving,
+            to grow into fullstack development. I thrive on problem-solving,
             creating user-friendly interfaces, and collaborating with teams or
             clients to turn ideas into reliable, maintainable web solutions.
           </p>
