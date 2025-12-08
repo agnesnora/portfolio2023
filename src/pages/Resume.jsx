@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
-import { useState } from "react";
-import { motion } from "motion/react";
+import { useState, useRef } from "react";
+import { motion, useInView } from "motion/react";
 
 export default function Resume() {
   const [hoveredImgId, setHoveredImgId] = useState(null);
+  const techRef = useRef(null);
+  const isInView = useInView(techRef, { once: true });
 
   const handleMouseEnter = (e) => {
     const detailedId = e.target.dataset.id;
@@ -91,7 +93,7 @@ export default function Resume() {
       <motion.li
         key={tech.alt}
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.3, delay: i * 0.1 }}
       >
         <img
@@ -186,7 +188,7 @@ export default function Resume() {
       </main>
       <div className="resume--techstack"></div>
       <h3>My techstack</h3>
-      <ul className="techstack--list">{TechStackEl()}</ul>
+      <ul ref={techRef} className="techstack--list">{TechStackEl()}</ul>
       <h3>Current studies</h3>
       <ul className="techstack--list">{StudyTechStackEl()}</ul>
       <div className="resume--footer">
