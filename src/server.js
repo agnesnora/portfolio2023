@@ -79,61 +79,6 @@ createServer({
 
       type: ["React", "Responsive", "SCSS"],
     });
-
-    server.create("project", {
-      id: "8",
-      name: "Color Scheme Generator",
-
-      description:
-        "The Color Scheme Generator was a solo project as part of the Working with APIs Module of the Scrimba Career Path. The user can choose 'seed color' and color scheme mode. Clicking the button makes a request to the Color API to get a color scheme. As a stretch goal I have added a day/night button and the possibility to save the favourite schemes to the user's profile. Own design.  ",
-      imageUrl: "images/Color.png",
-      type: ["React", "API", "CSS"],
-      live: "https://coloragnesnora.netlify.app",
-      code: "https://github.com/agnesnora/colorReact",
-    });
-
-    server.create("project", {
-      id: "9",
-      name: "Snap RemoteWork",
-      imageUrl: "images/snap.png",
-      description:
-        "This project is my very first experience using TypeScript in which I am aiming to build a reusable Navbar component and craft a responsive website. The project also marks my initial exploration into testing with Jest for React code. While diving into the world of TypeScript and React, I took on the challenge of incorporating Jest for testing, which brought its own set of challenges. One of the significant hurdles was setting up a seamless environment where Vite, TypeScript, and Jest could seamlessly work together.",
-      type: ["TypeScript", "React", "Responsive", "SCSS", "Jest"],
-      live: "https://remoteworkts.netlify.app/",
-      code: "https://github.com/agnesnora/remotework_ts",
-    });
-    server.create("project", {
-      id: "10",
-      name: "Planet Fact Site",
-      imageUrl: "images/planet.png",
-      description:
-        "Build an 8-page planets fact site, following the provided design, allowing users to explore information about each planet. The key functionalities include the ability to toggle between Overview, Internal Structure and Surface Geology tabs, ensuring an optimal layout based on the device's screen size, and providing hover states for interactive elements. I have been using React for building the components and managing state, React Router for navigation between planet page and Jest and React Testing Library for testing components and ensuring functionality",
-
-      type: ["TypeScript", "React", "Responsive", "SCSS"],
-      live: "https://planets-site-facts.netlify.app/",
-      code: "https://github.com/agnesnora/planets-fact-site",
-    });
-    server.create("project", {
-      id: "11",
-      name: "Component library",
-      imageUrl: "images/Component.png",
-      description:
-        "This Component Library was a solo project as part of the Advanced React Module of the Scrimba Career Path. Built from scratch, creating reusable components in React. Own design.",
-      type: ["React", "SCSS", "Responsive"],
-      live: "https://clever-kitten-80ba4d.netlify.app/",
-      code: "https://github.com/agnesnora/componentLibrary",
-    });
-    server.create("project", {
-      id: "12",
-      name: "Data Analytics",
-
-      description:
-        "In this recent project, I embarked on a hands-on journey to sharpen my coding skills by translating a Figma design into a functional web application. The primary goal of this exercise was to enhance my proficiency in CSS and polish my responsive design techniques.",
-      imageUrl: "images/Data.png",
-      type: ["Responsive", "SCSS", "React"],
-      live: "https://dataanalyticsagnesnora.netlify.app/",
-      code: "https://github.com/agnesnora/Data-Analitics",
-    });
   },
 
   routes() {
