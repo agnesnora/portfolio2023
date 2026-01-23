@@ -15,9 +15,18 @@ createServer({
       type: ["NextJs", "Typescript", "SCSS", "Responsive"],
       live: "https://ciklusharmonia.com",
     });
-
     server.create("project", {
       id: "2",
+      name: "Energy Management Admin Dashboard",
+      description:
+        "Modern admin dashboard developed as a responsive on desktop frontend web application for an energy management use case. The project focuses on visualizing and managing gas and electricity consumption data using a custom-designed, user-friendly UI. Features include interactive tables with filtering, sorting and detailed views, a map view built with Leaflet to display meter locations, and stacked bar charts created with Recharts for monthly consumption analysis. Additional functionality includes CRUD operations, JavaScript-based calculations, light/dark theme toggle, i18n (EN/HU), and unit tests.",
+      imageUrl: "images/tis.svg",
+      type: ["NextJs", "Typescript", "SCSS"],
+      live: "https://energiometer.vercel.app/dashboard",
+    });
+
+    server.create("project", {
+      id: "3",
       name: "Beeco Admin App",
 
       description:
@@ -26,7 +35,7 @@ createServer({
       type: ["TypeScript", "React", "SCSS", "Fixed-width"],
     });
     server.create("project", {
-      id: "3",
+      id: "4",
       name: "Beeco Partner App",
 
       description:
@@ -35,7 +44,7 @@ createServer({
       type: ["React", "Tailwind", "Responsive"],
     });
     server.create("project", {
-      id: "4",
+      id: "5",
       name: "Movie List App",
       description:
         "A simple searchable movie app for wide screens built with React with the given requirements. Pop-up window with the movie details. Deletable lines and sortable columns. Both the table and the pop-up mode can be paged. Own design.",
@@ -46,7 +55,7 @@ createServer({
     });
 
     server.create("project", {
-      id: "5",
+      id: "6",
       name: "DevJobs",
 
       description:
@@ -57,7 +66,7 @@ createServer({
       code: "https://github.com/agnesnora/devjobs",
     });
     server.create("project", {
-      id: "6",
+      id: "7",
       name: "Quizzical",
 
       description:
@@ -68,7 +77,7 @@ createServer({
       code: "https://github.com/agnesnora/quizzical",
     });
     server.create("project", {
-      id: "7",
+      id: "8",
       name: "Tindog",
       imageUrl: "images/Tindog.png",
       live: "https://tindogagnesnora.netlify.app",
