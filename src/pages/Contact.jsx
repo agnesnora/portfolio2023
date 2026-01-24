@@ -11,7 +11,7 @@ export default function Contact() {
       <div>
         <div className="contact--data">
           <FaEnvelope className="social--icons" />
-          <p>agnesnora@gmail.com</p>
+          <p>agnesnorastudio@gmail.com</p>
         </div>
         <div className="contact--data">
           <FaPhoneSquare className="social--icons" />

@@ -188,7 +188,9 @@ export default function Resume() {
       </main>
       <div className="resume--techstack"></div>
       <h3>My techstack</h3>
-      <ul ref={techRef} className="techstack--list">{TechStackEl()}</ul>
+      <ul ref={techRef} className="techstack--list">
+        {TechStackEl()}
+      </ul>
       <h3>Current studies</h3>
       <ul className="techstack--list">{StudyTechStackEl()}</ul>
       <div className="resume--footer">
@@ -198,7 +200,7 @@ export default function Resume() {
 
         <a
           className="button--link"
-          href="/images/Ágnes Kuti-Palásthy CV 2025-07.pdf"
+          href="/images/Agnes Kuti Palasthy_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
