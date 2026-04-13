@@ -8,6 +8,24 @@ createServer({
   seeds(server) {
     server.create("project", {
       id: "1",
+      name: "AgnesnoraStudio",
+      description:
+        "I designed and developed a high-performance personal marketing website using Astro and Tailwind CSS. The goal was to create a fast, SEO-optimized, conversion-focused site that presents my web development services in a clean and modern way.",
+      imageUrl: "images/agnesnorastudio.png",
+      type: ["AstroJs", "Tailwind", "Responsive"],
+      live: "https://agnesnorastudio.hu",
+    });
+    server.create("project", {
+      id: "2",
+      name: "Strapi CMS Plant Blog",
+      description:
+        "Developed a high-performance full-stack platform using Astro and Strapi as a headless CMS. Built a complete CRM system, dynamic page builder, and blog functionality. Implemented i18n (EN/HU) with seamless language switching. Deployed on Vercel and Strapi Cloud. Achieved 100% performance through optimized architecture and Tailwind CSS.",
+      imageUrl: "images/astrostrapi.png",
+      type: ["AstroJs", "Strapi CMS", "Tailwind"],
+      live: "https://astro-strapi-frontend.vercel.app/en",
+    });
+    server.create("project", {
+      id: "3",
       name: "Ciklusharmónia Web Page",
       description:
         "Built a full website for a menstrual-cycle mentoring coach (FEMM/BOM), including custom design and an easy-to-use blog interface powered by Sanity. I focused on keeping everything affordable, choosing budget-friendly tools like MailerLite, Resend, a low-cost booking system, and automations with Make to simplify her daily tasks.",
@@ -16,7 +34,7 @@ createServer({
       live: "https://ciklusharmonia.com",
     });
     server.create("project", {
-      id: "2",
+      id: "4",
       name: "Energy Management Admin Dashboard",
       description:
         "Modern admin dashboard developed as a responsive on desktop frontend web application for an energy management use case. The project focuses on visualizing and managing gas and electricity consumption data using a custom-designed, user-friendly UI. Features include interactive tables with filtering, sorting and detailed views, a map view built with Leaflet to display meter locations, and stacked bar charts created with Recharts for monthly consumption analysis. Additional functionality includes CRUD operations, JavaScript-based calculations, light/dark theme toggle, i18n (EN/HU), and unit tests.",
@@ -26,7 +44,7 @@ createServer({
     });
 
     server.create("project", {
-      id: "3",
+      id: "5",
       name: "Beeco Admin App",
 
       description:
@@ -35,7 +53,7 @@ createServer({
       type: ["TypeScript", "React", "SCSS", "Fixed-width"],
     });
     server.create("project", {
-      id: "4",
+      id: "6",
       name: "Beeco Partner App",
 
       description:
@@ -44,7 +62,7 @@ createServer({
       type: ["React", "Tailwind", "Responsive"],
     });
     server.create("project", {
-      id: "5",
+      id: "7",
       name: "Movie List App",
       description:
         "A simple searchable movie app for wide screens built with React with the given requirements. Pop-up window with the movie details. Deletable lines and sortable columns. Both the table and the pop-up mode can be paged. Own design.",
@@ -55,7 +73,7 @@ createServer({
     });
 
     server.create("project", {
-      id: "6",
+      id: "8",
       name: "DevJobs",
 
       description:
@@ -66,7 +84,7 @@ createServer({
       code: "https://github.com/agnesnora/devjobs",
     });
     server.create("project", {
-      id: "7",
+      id: "9",
       name: "Quizzical",
 
       description:
@@ -77,7 +95,7 @@ createServer({
       code: "https://github.com/agnesnora/quizzical",
     });
     server.create("project", {
-      id: "8",
+      id: "10",
       name: "Tindog",
       imageUrl: "images/Tindog.png",
       live: "https://tindogagnesnora.netlify.app",
